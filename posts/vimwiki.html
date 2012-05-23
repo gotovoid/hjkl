@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="Stylesheet" type="text/css" href="style.css" />
+    <title>How to use vimwiki - Kev++</title>
+    <style>
+        nav {
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            float: right;
+            padding-left: 10px;
+        }
+
+        footer {
+            font: x-small;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="http://hjkl.me">blog</a>
+        </nav>
+        <h1> How to use vimwiki </h1>
+    </header>
+
+    <section>
+        <hr />
+        <article>
+            
+<div class="toc">
+<ul>
+<li><a href="#toc_0.1">1. Open vimwiki</a>
+<li><a href="#toc_0.2">2. Search</a>
+<li><a href="#toc_0.3">3. Export to HTML</a>
+<li><a href="#toc_0.4">4. Typefaces</a>
+</ul>
+</ul>
+</div>
+
+<h2 id="toc_0.1">1. Open <a href="vimwiki.html">vimwiki</a></h2>
+<pre>
+let mapleader=','
+,ww
+,wt
+,wi
+,w,w
+,w,t
+&lt;Backspace&gt;
+&lt;Ctrl-Up&gt;
+&lt;Ctrl-Down&gt;
+</pre>
+
+<h2 id="toc_0.2">2. Search</h2>
+<pre>
+:VWS /pattern/
+:lopen
+</pre>
+
+<h2 id="toc_0.3">3. Export to HTML</h2>
+<pre>
+,whh
+,wh
+</pre>
+
+<h2 id="toc_0.4">4. Typefaces</h2>
+<table>
+<tr>
+<th>
+code
+</th>
+<th>
+html
+</th>
+</tr>
+<tr>
+<td>
+<code>*bold text*</code>
+</td>
+<td>
+<strong>bold text</strong>
+</td>
+</tr>
+<tr>
+<td>
+<code>_italic text_</code>
+</td>
+<td>
+<em>italic text</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>~~strikeout text~~</code>
+</td>
+<td>
+<del>strikeout text</del>
+</td>
+</tr>
+<tr>
+<td>
+`<code>code (no syntax) text</code>`
+</td>
+<td>
+<code>code (no syntax) text</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>super^script^</code>
+</td>
+<td>
+super<sup><small>script</small></sup>
+</td>
+</tr>
+<tr>
+<td>
+<code>sub,,script,,</code>
+</td>
+<td>
+sub<sub><small>script</small></sub>
+</td>
+</tr>
+</table>
+
+        </article>
+        <hr />
+    </section>
+
+    <footer>
+    Copyright &copy; <a href="http://hjkl.me">Kev++</a>
+    All rights reserved.
+    </footer>
+</body>
+</html>
