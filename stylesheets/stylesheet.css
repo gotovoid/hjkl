@@ -150,32 +150,29 @@ blockquote {
 }
 
 pre {
-  background: rgba(0, 0, 0, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 10px;
-  font-size: 14px;
-  color: #b5e853;
-  border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  text-wrap: normal;
-  overflow: auto;
-  overflow-y: hidden;
+    color: #000000;
+    background-color: #EEEEEE;
+    border-left: 5px solid #CCCCCC;
+    font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+    margin-bottom: 10px;
+    overflow: auto;
+    padding: 5px 5px 5px 10px;
+    width: auto;
 }
 
 table {
-  width: 100%;
-  margin: 0 0 20px 0;
+    border-collapse: collapse;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 0.3em;
 }
 
 th {
-  text-align: left;
-  border-bottom: 1px dashed #b5e853;
-  padding: 5px 10px;
-}
-
-td {
-  padding: 5px 10px;
+    background-color: gray;
 }
 
 hr {
@@ -245,3 +242,10 @@ a {
 .cf {
   zoom:1;
 }
+
+footer {
+    border-top: 1px dashed #B5E853;
+    font-size: small;
+    padding-top: 20px;
+}
+
