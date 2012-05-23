@@ -7,6 +7,35 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.20/themes/base/jquery-ui.css" type="text/css" media="screen" charset="utf-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.20/jquery-ui.js" type="text/javascript" charset="utf-8"></script>
+
+    <script type="text/javascript" charset="utf-8">
+        $(function(){
+            $('#nav_home').click(function(){
+                $('#main_content>h3').each(function(){
+                    $(this).show().next().hide();
+                });
+            });
+
+            $('#nav_about').click(function(){
+                alert('');
+            });
+
+
+            $('#main_content>h3').each(function(){
+                $(this).next().hide();
+            });
+
+            $('#main_content>h3').css({cursor: 'pointer'})
+            .click(function(){
+                $(this).next().toggle();
+            });
+
+        })
+    </script>
+
     <style>
         footer {
             border-top: 1px dashed #B5E853;
@@ -25,8 +54,8 @@
         <h2>blog</h2>
 
         <section id="downloads">
-          <a href="#" class="btn">Home</a>
-          <a href="#" class="btn">About</a>
+          <a id="nav_home" href="#" class="btn">Home</a>
+          <a id="nav_about" href="#" class="btn">About</a>
           <a href="https://github.com/gotovoid/hjkl" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
         </section>
       </div>
