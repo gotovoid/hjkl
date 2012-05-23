@@ -15,23 +15,13 @@
         $(function(){
             $('#nav_home').click(function(){
                 $('#main_content>h3').each(function(){
-                    $(this).show().next().hide();
                 });
             });
 
             $('#nav_about').click(function(){
-                alert('');
-            });
-
-
-            $('#main_content>h3').each(function(){
-                $(this).next().hide();
             });
 
             $('#main_content>h3').css({cursor: 'pointer'})
-            .click(function(){
-                $(this).next().toggle();
-            });
 
         })
     </script>
@@ -64,34 +54,15 @@
     <div class="container">
       <section id="main_content">
 
-        <h3>Why <b>GFW</b> sucks?</h3>
-<pre><code>$ toilet -f future 'GFW sucks!' | cowsay -n -f daemon
- ______________________________
-/ ┏━╸┏━╸╻ ╻   ┏━┓╻ ╻┏━╸╻┏ ┏━┓╻ \
-| ┃╺┓┣╸ ┃╻┃   ┗━┓┃ ┃┃  ┣┻┓┗━┓╹ |
-\ ┗━┛╹  ┗┻┛   ┗━┛┗━┛┗━╸╹ ╹┗━┛╹ /
- ------------------------------
-   \         ,        ,
-    \       /(        )`
-     \      \ \___   / |
-            /- _  `-/  '
-           (/\/ \ \   /\
-           / /   | `    \
-           O O   ) /    |
-           `-^--'`<     '
-          (_.)  _  )   /
-           `.___/`    /
-             `-----' /
-<----.     __ / __   \
-<----|====O)))==) \) /====
-<----'    `--' `.__,' \
-             |        |
-              \       /
-        ______( (_  / \______
-      ,'  ,-----'   |        \
-      `--{__________)        \/
-
-</code></pre>
+      <h3>
+          <a href="posts/curl.html">cURL</a>
+      </h3>
+      <h3>
+          <a href="posts/vimwiki.html">VimWiki</a>
+      </h3>
+      <h3>
+          <a href="posts/gfw.html">GFW</a>
+      </h3>
 
       </section>
     </div>
