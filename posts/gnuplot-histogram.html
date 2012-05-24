@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="Stylesheet" type="text/css" href="/stylesheets/stylesheet.css" />
+    <title>使用gunplot绘制直方图 - Kev++</title>
+    <style>
+        body {
+            max-width: 800px;
+            width: 90%;
+            margin: auto;
+        }
+
+        nav {
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            float: right;
+            padding-left: 10px;
+        }
+
+        footer {
+            font: x-small;
+            color: gray;
+        }
+
+        pre.out {
+            background-color: #C5D0D0;
+        }
+
+        pre.vim {
+            background-color: #F7F6D0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">返回到首页</a>
+        </nav>
+        <h1> 使用gunplot绘制直方图 </h1>
+    </header>
+
+    <section>
+        <article>
+            
+<div class="toc">
+<ul>
+<li><a href="#toc_0.1">1. 获取数据</a>
+<li><a href="#toc_0.2">2. 编写脚本</a>
+<li><a href="#toc_0.3">3. 运行脚本</a>
+</ul>
+</ul>
+</div>
+
+<h2 id="toc_0.1">1. 获取数据</h2>
+<p>
+Google搜索:
+</p>
+<blockquote>
+What's your favorite text editor?
+</blockquote>
+<p>
+<a href="https://spreadsheets.google.com/spreadsheet/viewanalytics?formkey=dHhwMm9jS1l6RTh4Q3RBZU1GRWE1R0E6MQ">https://spreadsheets.google.com/spreadsheet/viewanalytics?formkey=dHhwMm9jS1l6RTh4Q3RBZU1GRWE1R0E6MQ</a>
+</p>
+
+<pre class="vim">
+VIM          1368  48%
+EMACS        610   21%
+gEdit        307   11%
+Geany        66    2%
+jEdit        47    2%
+Kate         54    2%
+Bluefish     12    0%
+Notepad++    687   24%
+Textpad      77    3%
+UltraEdit    54    2%
+Coda         74    3%
+TextMate     511   18%
+SublimeText  10    0%
+</pre>
+<blockquote>
+注意: 预处理数据时, 我最后一行中的<del>Sublime Text</del>中间的空格去掉了.
+</blockquote>
+
+<h2 id="toc_0.2">2. 编写脚本</h2>
+<pre class="vim">
+#!/usr/bin/env gnuplot
+
+set terminal png
+set output 'editor.png'
+set title "What's your favorite text editor?" font 'Ubuntu,16'
+set xtics scale 0 rotate by -45
+set style fill solid 0.25 noborder
+set box 0.5
+set rmargin 5
+set grid y
+
+plot 'editor.csv' using 2:xtic(1) with boxes lc rgb 'blue' title 'Votes',\
+     '' using 0:($2+50):3 with labels notitle
+</pre>
+
+<h2 id="toc_0.3">3. 运行脚本</h2>
+<pre>
+chmod +x editor.plt
+./editor.plt
+display editor.png
+</pre>
+
+        </article>
+    </section>
+
+    <footer>
+    Copyright &copy; <a href="/">Kev++</a>
+    All rights reserved.
+    </footer>
+</body>
+</html>
