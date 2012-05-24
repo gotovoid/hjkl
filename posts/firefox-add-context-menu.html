@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="Stylesheet" type="text/css" href="/stylesheets/stylesheet.css" />
+    <title>增加firefox右击菜单 - Kev++</title>
+    <style>
+        body {
+            max-width: 800px;
+            width: 90%;
+            margin: auto;
+        }
+
+        nav {
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            float: right;
+            padding-left: 10px;
+        }
+
+        footer {
+            font: x-small;
+            color: gray;
+        }
+
+        pre.out {
+            background-color: #C5D0D0;
+        }
+
+        pre.vim {
+            background-color: #F7F6D0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">返回到首页</a>
+        </nav>
+        <h1> 增加firefox右击菜单 </h1>
+    </header>
+
+    <section>
+        <article>
+            
+<div class="toc">
+<ul>
+<li><a href="#toc_0.1">1. 工具</a>
+<li><a href="#toc_0.2">2. 修改<code>omni.ja</code></a>
+<ul>
+<li><a href="#toc_0.2.1">2.1. 解压缩<code>omni.ja</code></a>
+<li><a href="#toc_0.2.2">2.2. 编辑<code>browser.xul</code></a>
+<li><a href="#toc_0.2.3">2.3. 压缩/覆盖<code>omni.ja</code></a>
+</ul>
+<li><a href="#toc_0.3">3. 最终效果</a>
+<li><a href="#toc_0.4">4. 注意事项</a>
+<li><a href="#toc_0.5">5. 参考</a>
+</ul>
+</ul>
+</div>
+
+<h2 id="toc_0.1">1. 工具</h2>
+<ul>
+<li>
+<code>firefox</code>
+
+<li>
+高级文本编辑器: <code>vim</code>, <code>notepad++</code>等
+
+<li>
+压缩/解压缩工具: <code>zip</code>/<code>unzip</code>, <code>7z</code>等
+
+</ul>
+
+<h2 id="toc_0.2">2. 修改<code>omni.ja</code></h2>
+<h3 id="toc_0.2.1">2.1. 解压缩<code>omni.ja</code></h3>
+<pre>
+mkdir ~/firefox &amp;&amp; cd ~/firefox
+cp /usr/lib/firefox/omni.ja .
+unzip omni.ja -d omni
+cd omni
+</pre>
+
+<h3 id="toc_0.2.2">2.2. 编辑<code>browser.xul</code></h3>
+<pre>
+vim ./chrome/browser/content/browser/browser.xul
+</pre>
+
+<pre class="vim">
+&lt;menupopup id="contentAreaContextMenu" ...
+    ...
+    &lt;menuitem id="context-inspect" ...
+
+    &lt;!-- ADD by Kev++ BEGIN --&gt;
+    &lt;menuseparator id="kev-separator"/&gt;
+
+    &lt;menuitem id="context-toggle-proxy"
+              label="Toggle Proxy"
+              oncommand="var stat = gPrefService.getIntPref('network.proxy.type');
+                         var port = gPrefService.getIntPref('network.proxy.socks_port');
+                         this.setAttribute('label', 'Toggle Proxy: '+port.toString());
+                         if(!stat)
+                             this.setAttribute('checked', 'true');
+                         else
+                             this.removeAttribute('checked');
+                         gPrefService.setIntPref('network.proxy.type', !stat);"
+              /&gt;
+
+    &lt;menuitem id="context-restart"
+              label="Restart"
+              oncommand="const nsIAppStartup = Components.interfaces.nsIAppStartup;
+                         Components.classes['@mozilla.org/toolkit/app-startup;1'].getService(nsIAppStartup)
+                                   .quit(nsIAppStartup.eRestart | nsIAppStartup.eAttemptQuit);"
+              /&gt;
+
+    &lt;menuitem id="context-quit"
+              label="Quit"
+              command="cmd_quitApplication"
+              /&gt;
+    &lt;!-- ADD by Kev++ END --&gt;
+
+&lt;/menupopup&gt;
+</pre>
+<blockquote>
+说明: 把代码插入到不同的位置, 可以改变菜单项的排列顺序
+</blockquote>
+
+<h3 id="toc_0.2.3">2.3. 压缩/覆盖<code>omni.ja</code></h3>
+<pre>
+zip -r omni.ja *
+sudo mv omni.ja /usr/lib/firefox/
+</pre>
+
+<h2 id="toc_0.3">3. 最终效果</h2>
+<pre class="out">
+| ...          |
+|--------------|
+| Toggle Proxy |
+| Restart      |
+| *Quit*       |
+|--------------|
+</pre>
+
+<h2 id="toc_0.4">4. 注意事项</h2>
+<p>
+一定要[启用/禁用]任意一个插件, 来重新加载<code>omni.ja</code>
+</p>
+
+<h2 id="toc_0.5">5. 参考</h2>
+<ul>
+<li>
+<a href="https://developer.mozilla.org/en/XUL/PopupGuide/Extensions">https://developer.mozilla.org/en/XUL/PopupGuide/Extensions</a>
+
+<li>
+<a href="http://superuser.com/questions/421800/how-to-append-customer-context-menuitem-to-the-last-postion-in-firefox">http://superuser.com/questions/421800/how-to-append-customer-context-menuitem-to-the-last-postion-in-firefox</a>
+
+<li>
+<a href="http://superuser.com/questions/421809/how-to-add-a-proxy-on-off-context-menuitem-to-firefox">http://superuser.com/questions/421809/how-to-add-a-proxy-on-off-context-menuitem-to-firefox</a>
+
+<li>
+<a href="http://kb.mozillazine.org/Firefox_:_Tips_:_Customize_context_menu">http://kb.mozillazine.org/Firefox_:_Tips_:_Customize_context_menu</a>
+
+<li>
+<a href="http://kb.mozillazine.org/UserChrome.css_Element_Names/IDs">http://kb.mozillazine.org/UserChrome.css_Element_Names/IDs</a>
+
+<li>
+<a href="https://developer.mozilla.org/en/FirefoxOverlayPoints/Menus">https://developer.mozilla.org/en/FirefoxOverlayPoints/Menus</a>
+
+<li>
+<a href="http://www.rdrop.com/~half/Creations/Writings/TechNotes/firefox.menus.html">http://www.rdrop.com/~half/Creations/Writings/TechNotes/firefox.menus.html</a>
+
+</ul>
+
+        </article>
+    </section>
+
+    <footer>
+    Copyright &copy; <a href="/">Kev++</a>
+    All rights reserved.
+    </footer>
+</body>
+</html>

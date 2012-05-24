@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="Stylesheet" type="text/css" href="/stylesheets/stylesheet.css" />
-    <title>How to use vimwiki - Kev++</title>
+    <title>使用vimwiki - Kev++</title>
     <style>
         body {
             max-width: 800px;
@@ -24,14 +24,22 @@
             font: x-small;
             color: gray;
         }
+
+        pre.out {
+            background-color: #C5D0D0;
+        }
+
+        pre.vim {
+            background-color: #F7F6D0;
+        }
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <a href="/">home</a>
+            <a href="/">返回到首页</a>
         </nav>
-        <h1> How to use vimwiki </h1>
+        <h1> 使用vimwiki </h1>
     </header>
 
     <section>
@@ -39,17 +47,19 @@
             
 <div class="toc">
 <ul>
-<li><a href="#toc_0.1">1. Open vimwiki</a>
-<li><a href="#toc_0.2">2. Search</a>
-<li><a href="#toc_0.3">3. Export to HTML</a>
-<li><a href="#toc_0.4">4. Typefaces</a>
+<li><a href="#toc_0.1">1. 打开</a>
+<li><a href="#toc_0.2">2. 查找</a>
+<li><a href="#toc_0.3">3. 导出HTML</a>
+<li><a href="#toc_0.4">4. 富文本</a>
 </ul>
 </ul>
 </div>
 
-<h2 id="toc_0.1">1. Open <a href="vimwiki.html">vimwiki</a></h2>
-<pre>
+<h2 id="toc_0.1">1. 打开</h2>
+<pre class="vim">
 let mapleader=','
+</pre>
+<pre>
 ,ww
 ,wt
 ,wi
@@ -60,26 +70,26 @@ let mapleader=','
 &lt;Ctrl-Down&gt;
 </pre>
 
-<h2 id="toc_0.2">2. Search</h2>
+<h2 id="toc_0.2">2. 查找</h2>
 <pre>
 :VWS /pattern/
 :lopen
 </pre>
 
-<h2 id="toc_0.3">3. Export to HTML</h2>
+<h2 id="toc_0.3">3. 导出HTML</h2>
 <pre>
 ,whh
 ,wh
 </pre>
 
-<h2 id="toc_0.4">4. Typefaces</h2>
+<h2 id="toc_0.4">4. 富文本</h2>
 <table>
 <tr>
 <th>
-code
+代码
 </th>
 <th>
-html
+效果
 </th>
 </tr>
 <tr>
