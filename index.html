@@ -4,12 +4,22 @@
         <meta charset='utf-8'>
         <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
+        <title>HJKL</title>
+
         <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
         <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.20/themes/base/jquery-ui.css" type="text/css" media="screen" charset="utf-8">
+
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.20/jquery-ui.js" type="text/javascript" charset="utf-8"></script>
+
+        <style>
+            #subtitle {
+                font-size: small;
+            }
+
+        </style>
 
         <script type="text/javascript" charset="utf-8">
             $(function(){
@@ -30,14 +40,17 @@
             })
         </script>
 
-        <style>
-            #subtitle {
-                font-size: small;
-            }
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-32078285-1']);
+            _gaq.push(['_trackPageview']);
 
-        </style>
-
-        <title>HJKL</title>
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
     </head>
 
     <body>
