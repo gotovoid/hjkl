@@ -60,16 +60,30 @@
         
 <div class="toc">
 <ul>
-<li><a href="#toc_0.1">1. 获取数据</a>
-<li><a href="#toc_0.2">2. 编写脚本</a>
-<li><a href="#toc_0.3">3. 代码解释</a>
-<li><a href="#toc_0.4">4. 运行脚本</a>
-<li><a href="#toc_0.5">5. 视频演示</a>
+<li><a href="#toc_0.1">1. 工具介绍</a>
+<li><a href="#toc_0.2">2. 获取数据</a>
+<li><a href="#toc_0.3">3. 编写脚本</a>
+<li><a href="#toc_0.4">4. 代码解释</a>
+<li><a href="#toc_0.5">5. 运行脚本</a>
+<li><a href="#toc_0.6">6. 视频演示</a>
 </ul>
 </ul>
 </div>
 
-<h2 id="toc_0.1">1. 获取数据</h2>
+<h2 id="toc_0.1">1. 工具介绍</h2>
+<ul>
+<li>
+<code>vim</code>/<code>gvim</code> - 高级文本编辑器
+
+<li>
+<code>gnuplot</code> - 通用绘图工具
+
+<li>
+<code>display</code> - 图片浏览器(需安装<code>ImageMagick</code>)
+
+</ul>
+
+<h2 id="toc_0.2">2. 获取数据</h2>
 <p>
 Google搜索:
 </p>
@@ -96,10 +110,10 @@ TextMate     511   18%
 SublimeText  10    0%
 </pre>
 <blockquote>
-注意: 预处理数据时, 我最后一行中的<del>Sublime Text</del>中间的空格去掉了.
+注意: 预处理数据时, 需要把最后一行中的<del>Sublime Text</del>中间的空格去掉了.
 </blockquote>
 
-<h2 id="toc_0.2">2. 编写脚本</h2>
+<h2 id="toc_0.3">3. 编写脚本</h2>
 <pre class="vim">
 #!/usr/bin/env gnuplot
 
@@ -117,26 +131,34 @@ plot 'editor.csv' using 2:xtic(1) with boxes linecolor rgb 'blue' title 'Votes',
      '' using 0:($2+50):3 with labels notitle
 </pre>
 
-<h2 id="toc_0.3">3. 代码解释</h2>
+<h2 id="toc_0.4">4. 代码解释</h2>
 <pre class="vim">
 #!/usr/bin/env gnuplot
 
 # 输出类型
 set terminal png
+
 # 输出文件名
 set output 'editor.png'
+
 # 标题及其字体
 set title "What's your favorite text editor?" font 'Ubuntu,16'
+
 # X轴刻度标签顺时针旋转45°, 并且隐藏刻度线
 set xtics scale 0 rotate by -45
+
 # 填充颜色, 并隐藏边框
 set style fill solid 0.25 noborder
+
 # 矩形框的宽度
 set box 0.5
+
 # 右边距
 set rmargin 5
+
 # 下边距
 set bmargin 5
+
 # 显示Y轴网格
 set grid y
 
@@ -145,7 +167,7 @@ plot 'editor.csv' using 2:xtic(1) with boxes linecolor rgb 'blue' title 'Votes',
      '' using 0:($2+50):3 with labels notitle
 </pre>
 
-<h2 id="toc_0.4">4. 运行脚本</h2>
+<h2 id="toc_0.5">5. 运行脚本</h2>
 <pre>
 chmod +x editor.plt
 ./editor.plt
@@ -155,7 +177,7 @@ display editor.png
 <a href="/images/editor.png"><img src="/images/editor.png" /></a>
 </p>
 
-<h2 id="toc_0.5">5. 视频演示</h2>
+<h2 id="toc_0.6">6. 视频演示</h2>
 <ul>
 <li>
 优酷: <a href="http://v.youku.com/v_show/id_XNDAxNzkxMDY4.html">http://v.youku.com/v_show/id_XNDAxNzkxMDY4.html</a>
