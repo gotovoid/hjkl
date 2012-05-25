@@ -110,6 +110,7 @@ plink -N -D 8888 -pw 84601359 freessh@jp.uudaili.com
 <h2 id="toc_0.4">4. bash脚本</h2>
 <pre class="vim">
 #!/usr/bin/env bash
+# gfw.sh
 # free ssh
 
 while :
@@ -133,6 +134,47 @@ do
     echo "TIME: $(date +'%F %T')"
     plink -N -D $port -pw $pass $user@$host &amp;&gt;/dev/null
 done
+</pre>
+
+<p>
+另一个脚本
+</p>
+<pre class="vim">
+#!/usr/bin/env bash
+# gfw2.sh
+# free ssh
+
+cat &gt;gfw.yql &lt;&lt; "_EOF_"
+SELECT content
+FROM html
+WHERE url='https://www.usassh.com/free.php'
+    AND xpath='//font[@color="red"][not(contains(text(), "。"))]'
+LIMIT 1
+_EOF_
+
+while :
+do
+    clear
+    echo "Connecting ..."
+    host=free.usassh.com
+    user=usassh
+    pass=$(curl -s --data-urlencode 'q@gfw.yql' http://query.yahooapis.com/v1/public/yql |
+            xmlstarlet sel -t -m //font -v .)
+    port=9999
+    if [[ -z $pass ]]
+    then
+        continue
+    fi
+    clear
+    echo "HOST: $host"
+    echo "USER: $user"
+    echo "PASS: $pass"
+    echo "PORT: $port"
+    echo "TIME: $(date +'%F %T')"
+    plink -N -D $port -pw $pass $user@$host &amp;&gt;/dev/null
+done
+
+rm gfw.yql
 </pre>
 
 <h2 id="toc_0.5">5. 运行脚本</h2>
@@ -170,7 +212,7 @@ System Settings -&gt; Network -&gt; Network proxy
 <h2 id="toc_0.7">7. 视频演示</h2>
 <ul>
 <li>
-优酷: <a href="">无期限审核中...</a>
+优酷: <a href="http://v.youku.com/v_show/id_XNDAxOTkzNzcy.html">http://v.youku.com/v_show/id_XNDAxOTkzNzcy.html</a>
 
 <li>
 下载: <a href="http://ubuntuone.com/4kBLIAdLhlBc0l3PcIUe09">http://ubuntuone.com/4kBLIAdLhlBc0l3PcIUe09</a>
