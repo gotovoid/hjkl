@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="Stylesheet" type="text/css" href="/stylesheets/stylesheet.css" />
+        <title>SSH tunnel - Kev++</title>
+        <style>
+            body {
+                max-width: 800px;
+                width: 90%;
+                margin: auto;
+            }
+
+            nav {
+                margin-bottom: 10px;
+            }
+
+            nav a {
+                float: right;
+                padding-left: 10px;
+            }
+
+            footer {
+                font: x-small;
+                color: gray;
+            }
+
+            pre.out {
+                background-color: #C5D0D0;
+            }
+
+            pre.vim {
+                background-color: #F7F6D0;
+            }
+        </style>
+
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-32078285-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+
+    </head>
+    <body>
+        <header>
+        <nav>
+        <a href="/">返回到首页</a>
+        </nav>
+        <h1> SSH tunnel </h1>
+        </header>
+
+        <section>
+        <article>
+        
+<div class="toc">
+<ul>
+<li><a href="#toc_0.1">1. 工具介绍</a>
+<li><a href="#toc_0.2">2. 安装plink</a>
+<li><a href="#toc_0.3">3. 使用plink</a>
+<li><a href="#toc_0.4">4. bash脚本</a>
+<li><a href="#toc_0.5">5. 运行脚本</a>
+<li><a href="#toc_0.6">6. 设置firefox</a>
+<li><a href="#toc_0.7">7. 视频演示</a>
+</ul>
+</ul>
+</div>
+
+<h2 id="toc_0.1">1. 工具介绍</h2>
+<ul>
+<li>
+<code>plink</code>/<code>ssh</code> - SSH客户端
+
+<li>
+<code>firefox</code> - 网页浏览器
+
+<li>
+<code>vim</code> - 高级文本编辑器
+
+</ul>
+
+<h2 id="toc_0.2">2. 安装plink</h2>
+<ul>
+<li>
+Windows: <a href="http://the.earth.li/~sgtatham/putty/latest/x86/plink.exe">http://the.earth.li/~sgtatham/putty/latest/x86/plink.exe</a>
+
+<li>
+Ubuntu:
+<pre>
+sudo apt-get install putty-tools
+</pre>
+
+</ul>
+
+<h2 id="toc_0.3">3. 使用plink</h2>
+<iframe src="http://ssh.emdao.com/freessh.php" style="background-color: white;"></iframe>
+<pre>
+# 需要手动输入密码
+ssh -N -D 8888 freessh@jp.uudaili.com
+
+# plink的优点: 提供了`-pw`选项
+plink -N -D 8888 -pw 84601359 freessh@jp.uudaili.com
+</pre>
+
+<h2 id="toc_0.4">4. bash脚本</h2>
+<pre class="vim">
+#!/usr/bin/env bash
+# free ssh
+
+while :
+do
+    clear
+    echo "Connecting ..."
+    arr=($(
+            curl -s http://ssh.emdao.com/freessh.php |
+                iconv -f gbk -t utf8 |
+                    grep -Po '(?&lt;=: ).*(?=&lt;br)'
+    ))
+    host=${arr[0]}
+    user=${arr[1]}
+    pass=${arr[2]}
+    port=8888
+    clear
+    echo "HOST: $host"
+    echo "USER: $user"
+    echo "PASS: $pass"
+    echo "PORT: $port"
+    echo "TIME: $(date +'%F %T')"
+    plink -N -D $port -pw $pass $user@$host &amp;&gt;/dev/null
+done
+</pre>
+
+<h2 id="toc_0.5">5. 运行脚本</h2>
+<pre>
+chmod +x gfw.sh
+./gfw.sh
+</pre>
+
+<pre class="out">
+HOST: jp.uudaili.com
+USER: freessh
+PASS: 24670538
+PORT: 8888
+TIME: 2012-05-25 08:11:09
+</pre>
+
+<h2 id="toc_0.6">6. 设置firefox</h2>
+<ul>
+<li>
+Edit-&gt;Preferences-&gt;Advanced-&gt;Network-&gt;Settings...<br>
+  Manual proxy configuration:<br>
+  SOCKS Host: 127.0.0.1     Port: 8888
+
+<li>
+在地址栏中输入: <em>about:config</em>
+
+<li>
+System Settings -&gt; Network -&gt; Network proxy
+
+<li>
+参考 <a href="/posts/firefox-add-context-menu.html">/posts/firefox-add-context-menu.html</a>
+
+</ul>
+
+<h2 id="toc_0.7">7. 视频演示</h2>
+<p>
+优酷: []
+下载: []
+</p>
+
+        </article>
+        </section>
+
+        <footer>
+        Copyright &copy; <a href="/">Kev++</a>
+        All rights reserved.
+        </footer>
+    </body>
+</html>
