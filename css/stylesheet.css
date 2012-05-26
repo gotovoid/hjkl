@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #151515 url("../img/bkg.png") 0 0;
+    background: #151515 url("/img/bkg.png") 0 0;
     color: #eaeaea;
     font: 16px;
     line-height: 1.5;
@@ -80,9 +80,6 @@ nav ol li {
 #main_content {
     width: 100%;
     -webkit-font-smoothing: antialiased;
-}
-section img {
-    max-width: 100%
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -215,7 +212,7 @@ hr {
 
 .btn-github .icon {
     opacity: 0.6;
-    background: url("../img/blacktocat.png") 0 0 no-repeat;
+    background: url("/img/blacktocat.png") 0 0 no-repeat;
 }
 
 /* Links */
@@ -250,19 +247,36 @@ a {
     text-decoration: none;
 }
 
-.post_meta {
+.post-tags {
     font-size: x-small;
 }
 
-.post_category {
-    color: orange;
-    font-size: bold;
+.post-tag {
+    cursor: pointer;
+    text-shadow: none !important;
+    background-color: #000000;
+    border-bottom: 1px solid #3E6D8E;
+    border-right: 1px solid #7F9FB6;
+    color: #00FF00;
+    font-size: 90%;
+    line-height: 2.4;
+    margin: 2px 2px 2px 0;
+    padding: 3px 4px;
+    text-decoration: none;
+    white-space: nowrap;
 }
 
-.post_tag {
-
+.post-tag:hover {
+    background-color: #3E6D8E;
+    border-bottom: 1px solid #37607D;
+    border-right: 1px solid #37607D;
+    color: #E0EAF1;
+    text-decoration: none;
 }
 
+.post-tag img {
+    vertical-align: text-top;
+}
 
 footer {
     border-top: 1px dotted #B5E853;

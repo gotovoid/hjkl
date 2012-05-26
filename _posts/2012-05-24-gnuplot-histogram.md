@@ -2,7 +2,7 @@
 layout: default
 title: 使用gunplot绘制直方图
 category: gnuplot
-tags: [gnuplot, visualization]
+tags: [gnuplot, visualization, screencast]
 ---
 
 ## 工具介绍

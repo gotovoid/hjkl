@@ -1,8 +1,8 @@
 ---
 layout: default
-title: SSH tunnel
+title: 免费SSH看Youtube
 category: ssh
-tags: [ssh, plink, gfw]
+tags: [ssh, plink, gfw, screencast]
 ---
 
 ## 工具介绍

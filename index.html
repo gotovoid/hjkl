@@ -8,20 +8,21 @@ title: Home
         <li class="post">
 
             <span class="post_date">
-                {{ post.date | date_to_string }}
+                {{ post.date | date: "%Y-%m-%d" }}
             </span>
 
             <a class="post_title" href="{{ post.url }}">
                 {{ post.title }}
             </a>
 
-            <div class="post_meta">
-                <span class="post_category">
-                    {{ post.categories | array_to_sentence_string }}
-                </span>
-                <span class="post_tag">
-                    {{ post.tags | array_to_sentence_string }}
-                </span>
+            <div class="post-tags">
+                <a class="post-cat" href="/tagcloud.html#cat-{{post.category}}">{{ post.category }}</a>
+                {% for tag in post.tags %}
+                <a class="post-tag">
+                    {% if tag == "screencast" %} <img src="/img/download.png" /> {% endif %}
+                    {{ tag }}
+                </a>
+                {% endfor %}
             </div>
 
         </li>

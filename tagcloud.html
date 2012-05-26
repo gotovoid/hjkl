@@ -1,0 +1,23 @@
+---
+layout: default
+title: Tag Cloud
+---
+
+{% for cat in site.categories %}
+    <div id="cat-{{cat[0]}}" class="cat">
+        <span>{{ cat[0] }}</span>
+        <ul>
+        {% for post in cat[1] %}
+            <li>
+            <span class="post_date">
+                {{ post.date | date: "%Y-%m-%d" }}
+            </span>
+            <a class="post_title" href="{{ post.url }}">
+                {{ post.title }}
+            </a>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+    {% unless forloop.last %} <hr /> {% endunless %}
+{% endfor %}

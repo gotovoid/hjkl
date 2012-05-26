@@ -9,7 +9,6 @@
         <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" charset="utf-8"></script> -->
         <!-- <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.20/jquery-ui.js" type="text/javascript" charset="utf-8"></script> -->
         <script type="text/javascript">
-            /*
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-32078285-1']);
             _gaq.push(['_trackPageview']);
@@ -19,7 +18,6 @@
                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
                     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
-            */
         </script>
         <style type="text/css">
         </style>
@@ -32,6 +30,7 @@
             <nav>
             <ol>
                 <li><a href="/" class="btn">主页</a></li>
+                <li><a href="/tagcloud.html" class="btn">分类</a></li>
                 <li><a href="/about.html" class="btn">关于</a></li>
             </ol>
             </nav>
@@ -43,8 +42,8 @@
 
         <footer>
         <div class="container">
-            Copyright &copy; <a href="/">Kev++</a>
-            All rights reserved.
+            <p> Updated: {{ site.time | date: "%Y-%m-%d" }}</p>
+            <p> Copyright &copy; <a href="/">Kev++</a> All rights reserved.  </p>
         </div>
         </footer>
 
