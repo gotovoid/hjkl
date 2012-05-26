@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 使用gunplot绘制直方图
 category: gnuplot
 tags: [gnuplot, visualization, screencast]

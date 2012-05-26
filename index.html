@@ -7,25 +7,27 @@ title: Home
     {% for post in site.posts %}
         <li class="post">
 
-            <span class="post_date">
+            <span class="post-date">
                 {{ post.date | date: "%Y-%m-%d" }}
             </span>
 
-            <a class="post_title" href="{{ post.url }}">
+            <a class="post-title" href="{{ post.url }}">
                 {{ post.title }}
             </a>
 
             <div class="post-tags">
-                <a class="post-cat" href="/tagcloud.html#cat-{{post.category}}">{{ post.category }}</a>
+                <a class="post-tag post-cat" href="/tagcloud.html#cat-{{post.category}}">{{ post.category }}</a>
                 {% for tag in post.tags %}
-                <a class="post-tag">
-                    {% if tag == "screencast" %} <img src="/img/download.png" /> {% endif %}
-                    {{ tag }}
-                </a>
+                    {% if tag != post.category %}
+                    <a class="post-tag">
+                        {% if tag == "screencast" %} <img src="/img/download.png" /> {% endif %}
+                        {{ tag }}
+                    </a>
+                    {% endif %}
                 {% endfor %}
             </div>
 
         </li>
-        <hr />
+        {% unless forloop.last %}<hr />{% endunless %}
     {% endfor %}
 </ul>

@@ -3,6 +3,7 @@
     <head>
         <meta charset='utf-8'>
         <title> {% if page.title %} {{ page.title }} - {% endif %} HJKL </title>
+        <link type="image/png" href="/img/favicon.png" rel="icon">
         <link rel="stylesheet" type="text/css" href="/css/stylesheet.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="/css/pygments/default.css" media="screen" />
         <!-- <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.20/themes/base/jquery-ui.css" type="text/css" media="screen" charset="utf-8"> -->
@@ -25,7 +26,7 @@
     <body class="container">
 
         <header>
-        <h1 id="title">HJKL</h1>
+        <h1 id="title"><a href="/"><img src="/img/favicon.png" />HJKL</a></h1>
         <h2 id="subtitle">Simplicity is the ultimate sophistication. — Leonardo Da Vinci</h2>
             <nav>
             <ol>
@@ -41,10 +42,7 @@
         </section>
 
         <footer>
-        <div class="container">
-            <p> Updated: {{ site.time | date: "%Y-%m-%d" }}</p>
-            <p> Copyright &copy; <a href="/">Kev++</a> All rights reserved.  </p>
-        </div>
+            <p> Copyright &copy; <a href="/">Kev++</a> All rights reserved. [Updated @{{ site.time | date: "%Y-%m-%d" }}]</p>
         </footer>
 
 </body>

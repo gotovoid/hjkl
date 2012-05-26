@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 隐藏firefox右击菜单
 category: firefox
 tags: [firefox]

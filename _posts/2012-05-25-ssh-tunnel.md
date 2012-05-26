@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 免费SSH看Youtube
 category: ssh
 tags: [ssh, plink, gfw, screencast]

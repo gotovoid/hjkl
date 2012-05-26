@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 增加firefox右击菜单
 category: firefox
 tags: [firefox]
