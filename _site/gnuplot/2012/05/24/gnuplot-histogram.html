@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>  使用gunplot绘制直方图 -  HJKL </title>
+        <link rel="stylesheet" type="text/css" href="/css/stylesheet.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/css/pygments/default.css" media="screen" />
+        <!-- <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.20/themes/base/jquery-ui.css" type="text/css" media="screen" charset="utf-8"> -->
+        <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" charset="utf-8"></script> -->
+        <!-- <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.20/jquery-ui.js" type="text/javascript" charset="utf-8"></script> -->
+        <script type="text/javascript">
+            /*
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-32078285-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+            */
+        </script>
+        <style type="text/css">
+        </style>
+    </head>
+    <body class="container">
+
+        <header>
+        <h1 id="title">HJKL</h1>
+        <h2 id="subtitle">Simplicity is the ultimate sophistication. — Leonardo Da Vinci</h2>
+            <nav>
+            <ol>
+                <li><a href="/" class="btn">主页</a></li>
+                <li><a href="/about.html" class="btn">关于</a></li>
+            </ol>
+            </nav>
+        </header>
+
+        <section id="main_content">
+        <h2>工具介绍</h2>
+
+<ul>
+<li><code>vim</code>/<code>gvim</code> - 高级文本编辑器</li>
+<li><code>gnuplot</code> - 通用绘图工具</li>
+<li><code>display</code> - 图片浏览器(需安装<code>ImageMagick</code>)</li>
+</ul>
+
+
+<h2>获取数据</h2>
+
+<p>Google搜索: <a href="https://spreadsheets.google.com/spreadsheet/viewanalytics?formkey=dHhwMm9jS1l6RTh4Q3RBZU1GRWE1R0E6MQ">"What's your favorite text editor?"</a></p>
+
+<pre><code>VIM          1368  48%
+EMACS        610   21%
+gEdit        307   11%
+Geany        66    2%
+jEdit        47    2%
+Kate         54    2%
+Bluefish     12    0%
+Notepad++    687   24%
+Textpad      77    3%
+UltraEdit    54    2%
+Coda         74    3%
+TextMate     511   18%
+SublimeText  10    0%
+</code></pre>
+
+<blockquote><p>注意: 预处理数据时, 需要把最后一行中的<del>Sublime Text</del>中间的空格去掉了.</p></blockquote>
+
+<h2>编写脚本</h2>
+
+<div class="highlight"><pre><code class="gnuplot"><span class="c">#!/usr/bin/env gnuplot</span>
+
+<span class="k">set</span> <span class="nb">terminal</span> <span class="n">png</span>
+<span class="k">set</span> <span class="nb">output</span> <span class="s">&#39;editor.png&#39;</span>
+<span class="k">set</span> <span class="nb">title</span> <span class="s">&quot;What&#39;s your favorite text editor?&quot;</span> <span class="n">font</span> <span class="s">&#39;Ubuntu,16&#39;</span>
+<span class="k">set</span> <span class="nb">xtics</span> <span class="n">scale</span> <span class="mi">0</span> <span class="n">rotate</span> <span class="n">by</span> <span class="mi">-45</span>
+<span class="k">set</span> <span class="nb">style</span> <span class="n">fill</span> <span class="n">solid</span> <span class="mf">0.25</span> <span class="n">noborder</span>
+<span class="k">set</span> <span class="nb">box</span> <span class="mf">0.5</span>
+<span class="k">set</span> <span class="nb">rmargin</span> <span class="mi">5</span>
+<span class="k">set</span> <span class="nb">bmargin</span> <span class="mi">5</span>
+<span class="k">set</span> <span class="nb">grid</span> <span class="n">y</span>
+
+<span class="k">plot</span> <span class="s">&#39;editor.csv&#39;</span> <span class="nb">using</span> <span class="mi">2</span><span class="o">:</span><span class="nf">xtic</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="nb">with</span> <span class="n">boxes</span> <span class="n">linecolor</span> <span class="n">rgb</span> <span class="s">&#39;blue&#39;</span> <span class="nb">title</span> <span class="s">&#39;Votes&#39;</span><span class="o">,</span>\
+     <span class="s">&#39;&#39;</span> <span class="nb">using</span> <span class="mi">0</span><span class="o">:</span><span class="p">(</span><span class="err">$</span><span class="mi">2</span><span class="o">+</span><span class="mi">50</span><span class="p">)</span><span class="o">:</span><span class="mi">3</span> <span class="nb">with</span> <span class="n">labels</span> <span class="nb">notitle</span>
+</code></pre>
+</div>
+
+
+<h2>代码解释</h2>
+
+<div class="highlight"><pre><code class="gnuplot"><span class="c">#!/usr/bin/env gnuplot</span>
+
+<span class="c"># 输出类型</span>
+<span class="k">set</span> <span class="nb">terminal</span> <span class="n">png</span>
+
+<span class="c"># 输出文件名</span>
+<span class="k">set</span> <span class="nb">output</span> <span class="s">&#39;editor.png&#39;</span>
+
+<span class="c"># 标题及其字体</span>
+<span class="k">set</span> <span class="nb">title</span> <span class="s">&quot;What&#39;s your favorite text editor?&quot;</span> <span class="n">font</span> <span class="s">&#39;Ubuntu,16&#39;</span>
+
+<span class="c"># X轴刻度标签顺时针旋转45°, 并且隐藏刻度线</span>
+<span class="k">set</span> <span class="nb">xtics</span> <span class="n">scale</span> <span class="mi">0</span> <span class="n">rotate</span> <span class="n">by</span> <span class="mi">-45</span>
+
+<span class="c"># 填充颜色, 并隐藏边框</span>
+<span class="k">set</span> <span class="nb">style</span> <span class="n">fill</span> <span class="n">solid</span> <span class="mf">0.25</span> <span class="n">noborder</span>
+
+<span class="c"># 矩形框的宽度</span>
+<span class="k">set</span> <span class="nb">box</span> <span class="mf">0.5</span>
+
+<span class="c"># 右边距</span>
+<span class="k">set</span> <span class="nb">rmargin</span> <span class="mi">5</span>
+
+<span class="c"># 下边距</span>
+<span class="k">set</span> <span class="nb">bmargin</span> <span class="mi">5</span>
+
+<span class="c"># 显示Y轴网格</span>
+<span class="k">set</span> <span class="nb">grid</span> <span class="n">y</span>
+
+<span class="c"># 先绘制boxes, 再绘制labels</span>
+<span class="k">plot</span> <span class="s">&#39;editor.csv&#39;</span> <span class="nb">using</span> <span class="mi">2</span><span class="o">:</span><span class="nf">xtic</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="nb">with</span> <span class="n">boxes</span> <span class="n">linecolor</span> <span class="n">rgb</span> <span class="s">&#39;blue&#39;</span> <span class="nb">title</span> <span class="s">&#39;Votes&#39;</span><span class="o">,</span>\
+     <span class="s">&#39;&#39;</span> <span class="nb">using</span> <span class="mi">0</span><span class="o">:</span><span class="p">(</span><span class="err">$</span><span class="mi">2</span><span class="o">+</span><span class="mi">50</span><span class="p">)</span><span class="o">:</span><span class="mi">3</span> <span class="nb">with</span> <span class="n">labels</span> <span class="nb">notitle</span>
+</code></pre>
+</div>
+
+
+<h2>运行脚本</h2>
+
+<pre><code>chmod +x editor.plt
+./editor.plt
+display editor.png
+</code></pre>
+
+<p><img src="/img/editor.png" alt="editor" /></p>
+
+<h2>视频演示</h2>
+
+<ul>
+<li><a href="http://v.youku.com/v_show/id_XNDAxNzkxMDY4.html">优酷</a></li>
+<li><a href="http://ubuntuone.com/7a4Z0uA7X1DsWrIF9rymiX">下载</a></li>
+</ul>
+
+
+        </section>
+
+        <footer>
+        <div class="container">
+            Copyright &copy; <a href="/">Kev++</a>
+            All rights reserved.
+        </div>
+        </footer>
+
+</body>
+</html>

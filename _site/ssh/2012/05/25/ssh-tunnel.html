@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>  SSH tunnel -  HJKL </title>
+        <link rel="stylesheet" type="text/css" href="/css/stylesheet.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/css/pygments/default.css" media="screen" />
+        <!-- <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.20/themes/base/jquery-ui.css" type="text/css" media="screen" charset="utf-8"> -->
+        <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" charset="utf-8"></script> -->
+        <!-- <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.20/jquery-ui.js" type="text/javascript" charset="utf-8"></script> -->
+        <script type="text/javascript">
+            /*
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-32078285-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+            */
+        </script>
+        <style type="text/css">
+        </style>
+    </head>
+    <body class="container">
+
+        <header>
+        <h1 id="title">HJKL</h1>
+        <h2 id="subtitle">Simplicity is the ultimate sophistication. — Leonardo Da Vinci</h2>
+            <nav>
+            <ol>
+                <li><a href="/" class="btn">主页</a></li>
+                <li><a href="/about.html" class="btn">关于</a></li>
+            </ol>
+            </nav>
+        </header>
+
+        <section id="main_content">
+        <h2>工具介绍</h2>
+
+<ul>
+<li><code>plink</code>/<code>ssh</code> - SSH客户端</li>
+<li><code>firefox</code> - 网页浏览器</li>
+<li><code>vim</code> - 高级文本编辑器</li>
+</ul>
+
+
+<h2>安装plink</h2>
+
+<ul>
+<li>Windows: <a href="http://the.earth.li/~sgtatham/putty/latest/x86/plink.exe">下载plink.exe</a></li>
+<li>Ubuntu:
+  sudo apt-get install putty-tools</li>
+</ul>
+
+
+<h2>使用plink</h2>
+
+<pre><code># 需要手动输入密码
+ssh -N -D 8888 freessh@jp.uudaili.com
+
+# plink的优点: 提供了`-pw`选项
+plink -N -D 8888 -pw 84601359 freessh@jp.uudaili.com
+</code></pre>
+
+<h2>bash脚本</h2>
+
+<div class="highlight"><pre><code class="bash"><span class="c">#!/usr/bin/env bash</span>
+<span class="c"># gfw.sh</span>
+<span class="c"># free ssh</span>
+
+<span class="k">while</span> :
+<span class="k">do</span>
+<span class="k">    </span>clear
+    <span class="nb">echo</span> <span class="s2">&quot;Connecting ...&quot;</span>
+    <span class="nv">arr</span><span class="o">=(</span><span class="k">$(</span>
+            curl -s http://ssh.emdao.com/freessh.php |
+                iconv -f gbk -t utf8 |
+                    grep -Po <span class="s1">&#39;(?&lt;=: ).*(?=&lt;br)&#39;</span>
+    <span class="k">)</span><span class="o">)</span>
+    <span class="nv">host</span><span class="o">=</span><span class="k">${</span><span class="nv">arr</span><span class="p">[0]</span><span class="k">}</span>
+    <span class="nv">user</span><span class="o">=</span><span class="k">${</span><span class="nv">arr</span><span class="p">[1]</span><span class="k">}</span>
+    <span class="nv">pass</span><span class="o">=</span><span class="k">${</span><span class="nv">arr</span><span class="p">[2]</span><span class="k">}</span>
+    <span class="nv">port</span><span class="o">=</span>8888
+    clear
+    <span class="nb">echo</span> <span class="s2">&quot;HOST: $host&quot;</span>
+    <span class="nb">echo</span> <span class="s2">&quot;USER: $user&quot;</span>
+    <span class="nb">echo</span> <span class="s2">&quot;PASS: $pass&quot;</span>
+    <span class="nb">echo</span> <span class="s2">&quot;PORT: $port&quot;</span>
+    <span class="nb">echo</span> <span class="s2">&quot;TIME: $(date +&#39;%F %T&#39;)&quot;</span>
+    plink -N -D <span class="nv">$port</span> -pw <span class="nv">$pass</span> <span class="nv">$user</span>@<span class="nv">$host</span> &amp;&gt;/dev/null
+<span class="k">done</span>
+</code></pre>
+</div>
+
+
+<p>另一个脚本</p>
+
+<div class="highlight"><pre><code class="bash"><span class="c">#!/usr/bin/env bash</span>
+<span class="c"># gfw2.sh</span>
+<span class="c"># free ssh</span>
+
+cat &gt;gfw.yql &lt;&lt; <span class="s2">&quot;_EOF_&quot;</span>
+SELECT content
+FROM html
+WHERE <span class="nv">url</span><span class="o">=</span><span class="s1">&#39;https://www.usassh.com/free.php&#39;</span>
+    AND <span class="nv">xpath</span><span class="o">=</span><span class="s1">&#39;//font[@color=&quot;red&quot;][not(contains(text(), &quot;。&quot;))]&#39;</span>
+LIMIT 1
+_EOF_
+
+<span class="k">while</span> :
+<span class="k">do</span>
+<span class="k">    </span>clear
+    <span class="nb">echo</span> <span class="s2">&quot;Connecting ...&quot;</span>
+    <span class="nv">host</span><span class="o">=</span>free.usassh.com
+    <span class="nv">user</span><span class="o">=</span>usassh
+    <span class="nv">pass</span><span class="o">=</span><span class="k">$(</span>curl -s --data-urlencode <span class="s1">&#39;q@gfw.yql&#39;</span> http://query.yahooapis.com/v1/public/yql |
+            xmlstarlet sel -t -m //font -v .<span class="k">)</span>
+    <span class="nv">port</span><span class="o">=</span>9999
+    <span class="k">if</span> <span class="o">[[</span> -z <span class="nv">$pass</span> <span class="o">]]</span>
+    <span class="k">then</span>
+<span class="k">        continue</span>
+<span class="k">    fi</span>
+<span class="k">    </span>clear
+    <span class="nb">echo</span> <span class="s2">&quot;HOST: $host&quot;</span>
+    <span class="nb">echo</span> <span class="s2">&quot;USER: $user&quot;</span>
+    <span class="nb">echo</span> <span class="s2">&quot;PASS: $pass&quot;</span>
+    <span class="nb">echo</span> <span class="s2">&quot;PORT: $port&quot;</span>
+    <span class="nb">echo</span> <span class="s2">&quot;TIME: $(date +&#39;%F %T&#39;)&quot;</span>
+    plink -N -D <span class="nv">$port</span> -pw <span class="nv">$pass</span> <span class="nv">$user</span>@<span class="nv">$host</span> &amp;&gt;/dev/null
+<span class="k">done</span>
+
+rm gfw.yql
+</code></pre>
+</div>
+
+
+<h2>运行脚本</h2>
+
+<pre><code>chmod +x gfw.sh
+./gfw.sh
+</code></pre>
+
+<h3>output:</h3>
+
+<pre><code>HOST: jp.uudaili.com
+USER: freessh
+PASS: 24670538
+PORT: 8888
+TIME: 2012-05-25 08:11:09
+</code></pre>
+
+<h2>设置firefox</h2>
+
+<ul>
+<li>Edit->Preferences->Advanced->Network->Settings...<br>
+Manual proxy configuration:<br>
+SOCKS Host: 127.0.0.1     Port: 8888</li>
+<li>在地址栏中输入: <em>about:config</em></li>
+<li>System Settings -> Network -> Network proxy</li>
+</ul>
+
+
+<h2>视频演示</h2>
+
+<ul>
+<li><a href="http://v.youku.com/v_show/id_XNDAxOTkzNzcy.html">优酷</a></li>
+<li><a href="http://ubuntuone.com/4kBLIAdLhlBc0l3PcIUe09">下载</a></li>
+</ul>
+
+
+<h2>免费SSH</h2>
+
+<iframe src="http://ssh.emdao.com/freessh.php" style="background-color: white;"></iframe>
+
+
+
+
+        </section>
+
+        <footer>
+        <div class="container">
+            Copyright &copy; <a href="/">Kev++</a>
+            All rights reserved.
+        </div>
+        </footer>
+
+</body>
+</html>
