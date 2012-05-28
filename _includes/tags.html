@@ -1,0 +1,16 @@
+<!--tags(cat, tags)-->
+<div class="post-tags">
+    <a class="post-tag post-cat" href="/tagcloud.html#cat-{{cat}}">{{ cat }}</a>
+    {% for tag in tags %}
+        {% if tag != cat %}
+            <a class="post-tag">
+                {% if tag == "screencast" %}
+                    <img src="/img/youtube-16.png" />
+                {% else %}
+                    {{ tag }}
+                {% endif %}
+            </a>
+        {% endif %}
+    {% endfor %}
+</div>
+

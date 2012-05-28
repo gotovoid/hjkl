@@ -15,20 +15,9 @@ title: Home
                 {{ post.title }}
             </a>
 
-            <div class="post-tags">
-                <a class="post-tag post-cat" href="/tagcloud.html#cat-{{post.category}}">{{ post.category }}</a>
-                {% for tag in post.tags %}
-                    {% if tag != post.category %}
-                    <a class="post-tag">
-                        {% if tag == "screencast" %}
-                            <img src="/img/youtube-16.png" />
-                        {% else %}
-                            {{ tag }}
-                        {% endif %}
-                    </a>
-                    {% endif %}
-                {% endfor %}
-            </div>
+            {% assign cat = post.category %}
+            {% assign tags = post.tags %}
+            {% include tags.html %}
 
         </li>
         {% unless forloop.last %}<hr />{% endunless %}

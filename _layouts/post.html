@@ -6,24 +6,12 @@ layout: default
     {% if forloop.last %}
     <center>
         <h1> {{ page.title }} </h1>
-        <div class="post-tags">
-            <div class="post_date"> {{ page.date | date: "%Y-%m-%d" }} </div>
-            <a class="post-tag post-cat" href="/tagcloud.html#cat-{{cat}}">{{ cat }}</a>
-            {% for tag in page.tags %}
-                {% if tag != cat %}
-                    <a class="post-tag">
-                        {% if tag == "screencast" %}
-                            <img src="/img/youtube-16.png" />
-                        {% else %}
-                            {{ tag }}
-                        {% endif %}
-                    </a>
-                {% endif %}
-            {% endfor %}
-        </div>
+        <div class="post_date"> {{ page.date | date: "%Y-%m-%d" }} </div>
+        {% assign cat = page.category %}
+        {% assign tags = page.tags %}
+        {% include tags.html %}
         <hr />
     </center>
     {% endif %}
 {% endfor %}
-
 {{ content }}
