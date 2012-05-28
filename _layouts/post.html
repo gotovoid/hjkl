@@ -12,8 +12,11 @@ layout: default
             {% for tag in page.tags %}
                 {% if tag != cat %}
                     <a class="post-tag">
-                        {% if tag == "screencast" %} <img src="/img/download.png" /> {% endif %}
-                        {{ tag }}
+                        {% if tag == "screencast" %}
+                            <img src="/img/youtube-16.png" />
+                        {% else %}
+                            {{ tag }}
+                        {% endif %}
                     </a>
                 {% endif %}
             {% endfor %}
