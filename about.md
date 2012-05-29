@@ -1,6 +1,7 @@
 ---
 layout: default
 title: About
+comments: true
 ---
 
 ![flair](http://stackexchange.com/users/flair/141612.png)
