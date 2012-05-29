@@ -128,11 +128,11 @@ dt {
     font-weight: bold;
 }
 
-ul li {
+#main_content ul li {
     list-style: none;
 }
 
-ul li:before {
+#main_content ul li:before {
     content: "✰";
     font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
     font-size: 13px;
