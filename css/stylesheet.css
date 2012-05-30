@@ -148,6 +148,15 @@ blockquote {
     border-left: 1px dotted #666;
 }
 
+p code {
+    background-color: rgba(28, 255, 0, 0.12);
+    border-color: green;
+    border-style: solid;
+    border-width: 1px 0;
+    color: wheat;
+    padding: 1px;
+}
+
 pre {
     color: #000000;
     background-color: #EEEEEE;
