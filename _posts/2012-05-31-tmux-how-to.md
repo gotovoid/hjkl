@@ -15,7 +15,7 @@ published:  true
 > background, then later reattached.
 
 > `tmux`是个终端复用器：它让你在一个屏幕中, 创建/操作/控制若干终端（或窗口），
-> 每个窗口都可以独立地运行程序。`tmux`可以脱离屏幕在后台继续运行，稍后可复位。
+> 每个窗口都可以独立地运行程序。`tmux`可以脱离屏幕在后台继续运行，稍后可重新挂载。
 
 术语
 -------
@@ -91,9 +91,83 @@ published:  true
     L           Switch the attached client back to the last session.
     r           Force redraw of the attached client.
 
+实战演练
+--------
+### Window
+
+tmux的window与firefox/vim的Tab, 本质上是一样的, 只是名字不同而已.
+至于叫什么名字, 萝卜青菜各有所爱.
+我假设你已经见过firefox/vim了, 我就不费力气解释了.
+
+    # 新建一个Tab
+    tmux new-window (prefix + c)
+    # 根据索引选择Tab
+    tmux select-window -t :0-9 (prefix + 0-9)
+    # 重命名Tab
+    tmux rename-window (prefix + ,)
+        rename the current window
+
+### Pane
+
+pane是tmux的亮点(cool), 如果要向别人推销tmux的话, 我猜pane是最能吸引眼球的.
+特别是, 通过鼠标点击的傻瓜方式, 在不同的pane之间进行切换, 不得不让人感到愉悦!
+彻底打败了GNU screen.
+
+    # 水平分割
+    tmux split-window (prefix + ")
+    # 竖直分割
+    tmux split-window -h (prefix + %)
+    # 交换pane
+    tmux swap-pane -[UDLR] (prefix + { or })
+    # 选择pane
+    tmux select-pane -[UDLR]
+    # 选择下一个pane
+    tmux select-pane -t :.+
+
+### Session
+
+你可以把一组功能类似的window, 组织成是一个session.
+这样做的好处是, 可以很明确地知道自己在干嘛(play OR work).
+比如, 你可以定义这两个:
+
+- work - 包含几个用vim打开的文件, 一个clock, 也许还有emacs
+- play - 包含一个mpg321, 一个还未完成的curl命令(准备批量下载图片)
+
+<br>
+
+    # 创建一个名称为session_name的session
+    tmux new -s session_name
+    # 挂载一个已经存在的名称为session_name的session
+    tmux attach -t session_name
+    # 切换到一个已经存在的名称为session_name的session
+    tmux switch -t session_name
+    # 列出所有已经存在的session
+    tmux list-sessions
+    # 卸载当前挂载的session
+    tmux detach (prefix + d)
+
 配置文件
 ------------
-我的配置: [~/.tmux.conf](https://raw.github.com/gotovoid/dot/master/.tmux.conf)
+
+    # 重新绑定prefix
+    # xmodmap -e 'keycode 66 = Insert' &> /dev/null # 映射CapsLock为Insert
+    unbind C-b
+    set -g prefix IC
+    bind IC send-prefix
+
+    # 重新加载配置文件
+    bind F5 source-file ~/.tmux.conf
+
+    # 使用<Tab>快速地切换pane
+    bind -r Tab select-pane -t :.+
+
+    # 在copy时使用vi快捷键
+    setw -g mode-keys vi
+
+    # 启用鼠标
+    set -g mouse-resize-pane on
+    set -g mouse-select-pane on
+    set -g mouse-select-window on
 
 ... 未完待续 ...
 
@@ -101,6 +175,7 @@ published:  true
 ----
 - <http://tmux.sourceforge.net/>
 - <https://wiki.archlinux.org/index.php/Tmux>
+- 我的配置: [~/.tmux.conf](https://raw.github.com/gotovoid/dot/master/.tmux.conf)
 
 视频
 ----
