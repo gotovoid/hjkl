@@ -24,8 +24,8 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 20px;
 }
 
-li {
-    line-height: 1.4 ;
+#main_content li {
+    line-height: 1.8;
 }
 
 /* Header, <header> */
@@ -162,6 +162,7 @@ pre {
     background-color: #EEEEEE;
     border-left: 5px solid #CCCCCC;
     font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+    line-height: 1.1em;
     margin-bottom: 10px;
     overflow: auto;
     padding: 5px 5px 5px 10px;
@@ -296,18 +297,21 @@ img {
 }
 
 kbd {
-    background-color: #F7F7F7;
-    border: 1px solid #CCCCCC;
-    border-radius: 3px 3px 3px 3px;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #FFFFFF inset;
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: -moz-linear-gradient(#F1F1F1, #DDDDDD) repeat scroll 0 0 transparent;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
     color: #333333;
-    display: inline-block;
-    font-family: Arial,Helvetica,sans-serif;
-    font-size: 11px;
-    line-height: 1.4;
-    margin: 0 0.1em;
-    padding: 0.1em 0.6em;
-    text-shadow: 0 1px 0 #FFFFFF;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    margin: 1px;
+    padding: 1px 4px;
 }
 
 footer {
