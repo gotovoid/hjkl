@@ -57,4 +57,6 @@ $ vim .git/config
 $ git push
 {% endhighlight %}
 
+.
+
 [1]: http://hjkl.me/github/2012/05/29/jekyll.html
