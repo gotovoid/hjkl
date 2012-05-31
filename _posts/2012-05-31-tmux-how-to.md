@@ -104,8 +104,8 @@ published:  true
 
 参考
 ----
-- [官网](http://tmux.sourceforge.net/)
-- [wiki](https://wiki.archlinux.org/index.php/Tmux)
+- <http://tmux.sourceforge.net/>
+- <https://wiki.archlinux.org/index.php/Tmux>
 
 视频
 ----
