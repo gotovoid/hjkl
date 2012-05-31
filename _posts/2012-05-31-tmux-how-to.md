@@ -14,10 +14,8 @@ published:  true
 > single screen. tmux may be detached from a screen and continue running in the
 > background, then later reattached.
 
-![img](http://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Tmux.png/320px-Tmux.png)
-
-`tmux`是个终端复用器：它让你在一个屏幕中, 创建/操作/控制若干终端（或窗口），
-每个窗口都可以独立地运行程序。`tmux`可以脱离屏幕在后台继续运行，稍后可复位。
+> `tmux`是个终端复用器：它让你在一个屏幕中, 创建/操作/控制若干终端（或窗口），
+> 每个窗口都可以独立地运行程序。`tmux`可以脱离屏幕在后台继续运行，稍后可复位。
 
 术语
 -------
@@ -46,30 +44,27 @@ published:  true
     ~           Show previous messages from tmux, if any.
 
 ### window
+    c           Create a new window.
+    n           Change to the next window.
+    p           Change to the previous window.
+    l           Move to the previously selected window.
+    f           Prompt to search for text in open windows.
+    w           Choose the current window interactively.
+    i           Display some information about the current window.
     &           Kill the current window.
     '           Prompt for a window index to select.'
     ,           Rename the current window.
     .           Prompt for an index to move the current window.
     0 to 9      Select windows 0 to 9.
-    c           Create a new window.
-    n           Change to the next window.
-    p           Change to the previous window.
-    M-n         Move to the next window with a bell or activity marker.
-    M-o         Rotate the panes in the current window backwards.
-    M-p         Move to the previous window with a bell or activity marker.
 
 ### pane
-    C-o         Rotate the panes in the current window forwards.
-    !           Break the current pane out of the window.
     "           Split the current pane into two, top and bottom."
     %           Split the current pane into two, left and right.
+    C-o         Rotate the panes in the current window forwards.
+    !           Break the current pane out of the window.
     ;           Move to the previously active pane.
-    f           Prompt to search for text in open windows.
-    i           Display some information about the current window.
-    l           Move to the previously selected window.
     o           Select the next pane in the current window.
     q           Briefly display pane indexes.
-    w           Choose the current window interactively.
     x           Kill the current pane.
     {           Swap the current pane with the previous pane.
     }           Swap the current pane with the next pane.
@@ -81,20 +76,20 @@ published:  true
                 even-horizontal, even-vertical, main-horizontal, main-vertical, or tiled.
 
 ### copy/paste
-    #           List all paste buffers.
-    -           Delete the most recently copied buffer of text.
-    =           Choose which buffer to paste interactively from a list.
     [           Enter copy mode to copy text or view the history.
     ]           Paste the most recently copied buffer of text.
+    =           Choose which buffer to paste interactively from a list.
+    #           List all paste buffers.
+    -           Delete the most recently copied buffer of text.
     Page Up     Enter copy mode and scroll one page up.
 
 ### client/session
+    d           Detach the current client.
     $           Rename the current session.
     D           Choose a client to detach.
-    d           Detach the current client.
-    r           Force redraw of the attached client.
     s           Select a new session for the attached client interactively.
     L           Switch the attached client back to the last session.
+    r           Force redraw of the attached client.
 
 配置文件
 ------------
@@ -111,3 +106,6 @@ published:  true
 ----
 - [优酷](http://v.youku.com/v_show/id_XNDA1NTM1MDQ0.html)
 - [下载](http://ubuntuone.com/7HUPgFOU7kbBPvkSjlsrpd)
+
+![img](http://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Tmux.png/320px-Tmux.png)
+![cartoon](http://media.pragprog.com/images/cms/bhtmux-cartoon.jpg)
