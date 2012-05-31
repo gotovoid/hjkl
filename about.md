@@ -12,6 +12,12 @@ comments: true
 
 ## 本站及本人
 __godaddy__域名50RMB/年, __github__免费托管.  
+
+本网站基于[jekyll][1]框架,
+使用markdown写完文章后, 直接上传的github, 然后由github自动生成HTML.
+因此全部页面都是静态的HTML, 没有后台数据库.
+整个国内过程非常简单, 你不妨[尝试][1]一下!
+
 讲述程序员自己的故事, 用行动证明自己的存在!  
 少说一点废话, 多干一点实事.  
 XXX制造问题, 程序员解决问题.
@@ -50,3 +56,5 @@ $ vim .git/config
 {% highlight bash %}
 $ git push
 {% endhighlight %}
+
+[1]: http://hjkl.me/github/2012/05/29/jekyll.html
