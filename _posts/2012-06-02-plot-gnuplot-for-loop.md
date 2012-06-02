@@ -8,7 +8,8 @@ published:  true
 ---
 
 gnuplot 4.6增加了`for...loop`, 为制作动画提供了方便.  
-为了增加编程的乐趣, 我写了一个随机生成圆点的gif动画.
+为了增加编程的乐趣, 我写了一个随机生成圆点的gif动画.  
+如果你对gnuplot还不了解, 请阅读关于[plot](http://hjkl.me/tagcloud.html#cat-plot)的相关文章.
 
 脚本
 ----
@@ -47,3 +48,4 @@ do for [i=0:99] {
 参考
 ----
 - <http://gnuplot.sourceforge.net/demo_4.6/rgb_variable.html>
+- <http://www.gnuplotting.org/gnuplot-4-6-do/>
