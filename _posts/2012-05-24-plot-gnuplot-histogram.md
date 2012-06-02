@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 使用gunplot绘制直方图
-category: gnuplot
-tags: [gnuplot, visualization, screencast]
+category: plot
+tags: [plot, gnuplot, chart, screencast]
 ---
 
 ## 工具介绍
