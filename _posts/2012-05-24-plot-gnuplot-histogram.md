@@ -94,7 +94,8 @@ plot 'editor.csv' using 2:xtic(1) with boxes linecolor rgb 'blue' title 'Votes',
 
 ## 附录
 
-如果数据中第一行为column name, 并且数据是用"逗号"分割的. 例如:
+如果[数据](http://en.wikipedia.org/wiki/Usage_share_of_web_browsers#Wikimedia_.28April_2009_to_present.29)
+中第一行为字段名, 并且字段之间是用"逗号"分割的. 例如:
 
     # Usage share data from Wikimedia visitor log analysis report
     #
@@ -120,6 +121,8 @@ plot 'editor.csv' using 2:xtic(1) with boxes linecolor rgb 'blue' title 'Votes',
     October 2010,44.72,29.67,9.71,5.57,3.48,0.53,4.7
     November 2010,44.46,29.17,10.29,5.61,3.37,0.53,4.9
     December 2010,42.12,28.82,11.18,5.70,3.67,0.52,6.4
+
+> gnuplot会忽略以"井号"开始的注释
 
 {% highlight gnuplot %}
 #!/usr/bin/env gnuplot
