@@ -54,6 +54,6 @@ vim是一门行为艺术, 你光看不练, 是不行的.
 做任何事情都是这个道理.
 
 
-如<Learn the Vi and Vim Editors>一书封面上的眼睛猴(我的头像), 用vim的人一般都很孤独
+如"Learn the Vi and Vim Editors"一书封面上的眼睛猴(我的头像), 用vim的人一般都很孤独
 
 ...未完待续...
