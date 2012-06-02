@@ -57,6 +57,24 @@ $ vim .git/config
 $ git push
 {% endhighlight %}
 
-.
+----
+
+### vim
+
+    # 列出所有buffer
+    :ls!
+
+    # 彻底删除指定buffer
+    :bw 4
+
+    # 在另一个Tab中, 打开帮助文档
+    :tab help vim
+
+    # 打开所有buffer, 到不同的Tab中
+    :tab ball
+
+    # 运行date命令, 把结果显示到另一个窗口中
+    :vert new +r!date
+
 
 [1]: http://hjkl.me/github/2012/05/29/jekyll.html
