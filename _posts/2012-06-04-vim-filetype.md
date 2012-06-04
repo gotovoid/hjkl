@@ -51,6 +51,12 @@ filetype.vim
 
 
 这些语句是用来根据文件名/扩展名, 推测文件类型的. 
+`autocmd(au)`命令是用来注册事件的, 只要指定的事件被触发, 就会执行指定的命令.
+打开/新建一个java文件时, 事件`BufRead`/`BufNewFile`会被触发, 紧接着会执行`setf java`命令.
+之所以不直接调用`set ft=java`, 是因为`setfiletype(setf)`在调用`set ft=java`前会判断是否已经执行过.
+这样就避免了重复调用`set ft`, 一连串的`setf`只会运行一次(有点像if...else...语句).
+如果不能根据文件名推测出类型, 会调用另一脚本`script.vim`, 这个脚本会根据文本内容, 进一步侦测.
+总而言之, `filetype.vim`是为了`set ft=name`的, 接着会触发`FileType`事件.
 
 indent.vim
 ----------
