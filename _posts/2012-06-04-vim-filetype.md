@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      谈谈vim的语法侦测
+title:      谈谈vim语法侦测
 comments:   true
 category:   vim
 tags:       [vim]
