@@ -21,7 +21,7 @@ notepad认为, 来自于Linux的文本文件, 没有包含任何换行符, 因�
 
     set ffs=unix,dos ff=unix
 
-- `fileformats(ffs)` - vim会首先使用unix, 失败后, 再用dos的换行符格式, 解读文件. 并且把相应的值赋给`ff`.
+- `fileformats(ffs)` - vim会首先使用unix格式解析文件, 失败后, 再用dos格式. 并且把相应的值赋给`ff`.
 - `fileformat(ff)` - 创建新文件时, 选用`ff`所指定的换行符, 保存文件. 即使在Windows下, 我也`set ff=unix`.
 
 在最新版`vim73`中, 可以使用默认值. 通过`:set ffs? ff?`查看.
@@ -80,5 +80,6 @@ notepad认为, 来自于Linux的文本文件, 没有包含任何换行符, 因�
 
 说明
 ----
+- 本文内容基于vim的帮助文档, 请使用`:help 'ff'`查看文档, 这是最权威, 最准确的.
 - 所谓的dos格式, 并不一定要在Windows系统下, 才能创建. 我用`echo`命令, 演示了如何创建各种格式的文本.  
 - 除了dos及unix格式外, 还有mac格式. 有兴趣的朋友可以阅读<https://ccrma.stanford.edu/~craig/utility/flip/>.
