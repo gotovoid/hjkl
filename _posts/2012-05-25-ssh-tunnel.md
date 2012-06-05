@@ -110,6 +110,34 @@ rm gfw.yql
 - 在地址栏中输入: _about:config_
 - System Settings -> Network -> Network proxy
 
+----
+
+## 翻墙连接github的方法
+唯一的区别在于, 使用(-L)选项
+
+### SSH Tunnel
+{% highlight bash %}
+$ plink -N -L 2222:github.com:22 -pw 5736f    usassh@free.usassh.com
+#             ---- -------------     -----    ------ ---------------
+#              |        |              |         |         |
+#              |        |              |         |         |
+#              |        |              |         |         |
+#             本地   github          SSH密码  SSH用户名 SSH服务器
+{% endhighlight %}
+
+### 修改配置
+{% highlight bash %}
+$ vim .git/config
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+    url = ssh://git@localhost:2222/username/project.git
+{% endhighlight %}
+
+### 上传代码
+{% highlight bash %}
+$ git push
+{% endhighlight %}
+
 ## 视频演示
 - [优酷](http://v.youku.com/v_show/id_XNDAxOTkzNzcy.html)
 - [下载](http://ubuntuone.com/4kBLIAdLhlBc0l3PcIUe09)
