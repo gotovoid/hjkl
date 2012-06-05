@@ -17,8 +17,8 @@ published:  true
     set shiftwidth=4 tabstop=4 softtabstop=4 expandtab
     set listchars=precedes:«,extends:»,tab:▸·,trail:∙,eol:¶
 
-第一句: 设置Tab的宽度, 以及把Tab自动转化为空格
-第二句: 当运行`:set list`命令时, 把隐形的`Tab`及行尾的空格显示出来.
+- 第一句: 设置Tab的宽度, 以及把Tab自动转化为空格
+- 第二句: 当运行`:set list`命令时, 把隐形的`Tab`及行尾的空格显示出来.
 
 ----
 
@@ -35,7 +35,7 @@ published:  true
 
     :set shiftwidth=4
 
-> 自动语法缩进, 或者按下<kbd>&lt;&lt;</kbd>键后, 缩进的宽度为4
+> 自动语法缩进, 或者按下<kbd>&gt;&gt;</kbd>/<kbd>&lt;&lt;</kbd>键后, 缩进的宽度为4
 
     :set softtabstop=4
 
