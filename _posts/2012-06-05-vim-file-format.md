@@ -59,7 +59,7 @@ notepad认为, 来自于Linux的文本文件, 没有包含任何换行符, 因�
 
 ### 创建一个dos/unix混合格式的文本:
 
-    $ echo -ne 'hello\nworld\r\n' dx.txt
+    $ echo -ne 'hello\nworld\r\n' > dx.txt
     $ vim dx.txt
 
 运行下列命令, 就可以解决问题:
@@ -80,5 +80,5 @@ notepad认为, 来自于Linux的文本文件, 没有包含任何换行符, 因�
 
 说明
 ----
-所谓的dos格式, 并不一定要在Windows系统下, 才能创建. 我用`echo`命令, 演示了如何创建各种格式的文本.  
-除了dos及unix格式外, 还有mac格式. 有兴趣的朋友可以阅读<https://ccrma.stanford.edu/~craig/utility/flip/>.
+- 所谓的dos格式, 并不一定要在Windows系统下, 才能创建. 我用`echo`命令, 演示了如何创建各种格式的文本.  
+- 除了dos及unix格式外, 还有mac格式. 有兴趣的朋友可以阅读<https://ccrma.stanford.edu/~craig/utility/flip/>.
