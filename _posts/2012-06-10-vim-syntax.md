@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      谈谈vim的语法高亮
+title:      谈谈vim语法高亮
 comments:   true
 category:   vim
 tags:       [vim]
