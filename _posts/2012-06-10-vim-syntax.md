@@ -7,7 +7,7 @@ tags:       [vim]
 published:  true
 ---
 
-本文是[谈谈vim的语法侦测]({% post_url 2012-06-04-vim-filetype %})的续集.
+本文是[谈谈vim的语法侦测](http://hjkl.me/vim/2012/06/04/vim-filetype.html)的续集.
 讲解`:syntax`命令的用法, 以及内部实现.
 
 
