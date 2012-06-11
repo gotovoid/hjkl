@@ -145,6 +145,7 @@ $ plink -N -L 2222:github.com:22 -pw 5736f    usassh@free.usassh.com
 ## 视频演示
 - [优酷](http://v.youku.com/v_show/id_XNDAxOTkzNzcy.html)
 - [下载](http://ubuntuone.com/4kBLIAdLhlBc0l3PcIUe09)
+- 参考: <http://www.youku.com/playlist_show/id_3166797.html>
 
 ## 免费SSH
 <iframe src="http://ssh.emdao.com/freessh.php" style="background-color: white;"></iframe>
