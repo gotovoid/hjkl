@@ -6,7 +6,7 @@ tags: [ssh, plink, gfw, screencast]
 ---
 
 ## 工具介绍
-- `plink`/`ssh` - SSH客户端
+- `plink`/`ssh` - SSH命令行客户端, 也可以使用GUI工具`putty`.
 - `firefox` - 网页浏览器
 - `vim` - 高级文本编辑器
 
@@ -17,10 +17,10 @@ tags: [ssh, plink, gfw, screencast]
 
 ## 使用plink
 
-    # 需要手动输入密码
+    # Ubuntu自带的ssh, 需要手动输入密码
     ssh -N -D 8888 freessh@jp.uudaili.com
 
-    # plink的优点: 提供了`-pw`选项
+    # plink的优点是, 提供了`-pw`选项
     plink -N -D 8888 -pw 84601359 freessh@jp.uudaili.com
 
 ## bash脚本
@@ -103,19 +103,26 @@ rm gfw.yql
     PORT: 8888
     TIME: 2012-05-25 08:11:09
 
-## 设置firefox
+## 设置方法
 - Edit->Preferences->Advanced->Network->Settings...<br>
-  Manual proxy configuration:<br>
-  SOCKS Host: 127.0.0.1     Port: 8888
-- 在地址栏中输入: _about:config_
-- System Settings -> Network -> Network proxy
+  Manual proxy configuration: SOCKS Host: 127.0.0.1 Port: 8888
+- 在firefox地址栏中输入: _about:config_, 并且查找**proxy**
+- 对于Ubuntu系统: System Settings -> Network -> Network proxy
+
+> 设置方法很多, 选择自己喜欢的即可.
 
 ----
 
 ## 翻墙连接github的方法
-唯一的区别在于, 使用(-L)选项
+创建一个本地端口`2222`(任意), 重定向到`github.com:22`.
+与`翻墙看Youtube`的唯一的区别在于, 在命令行中使用`-L`(local)选项.  
 
-### SSH Tunnel
+### 被墙症状
+    $ git push
+    ssh: connect to host github.com port 22: Connection timed out
+    fatal: The remote end hung up unexpectedly
+
+### 命令行
 {% highlight bash %}
 $ plink -N -L 2222:github.com:22 -pw 5736f    usassh@free.usassh.com
 #             ---- -------------     -----    ------ ---------------
@@ -126,17 +133,16 @@ $ plink -N -L 2222:github.com:22 -pw 5736f    usassh@free.usassh.com
 {% endhighlight %}
 
 ### 修改配置
-{% highlight bash %}
-$ vim .git/config
+    $ vim .git/config
+    
+{% highlight conf %}
 [remote "origin"]
 	fetch = +refs/heads/*:refs/remotes/origin/*
     url = ssh://git@localhost:2222/username/project.git
 {% endhighlight %}
 
 ### 上传代码
-{% highlight bash %}
-$ git push
-{% endhighlight %}
+    $ git push
 
 ## 视频演示
 - [优酷](http://v.youku.com/v_show/id_XNDAxOTkzNzcy.html)
