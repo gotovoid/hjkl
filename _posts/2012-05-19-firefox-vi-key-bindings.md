@@ -45,6 +45,26 @@ tags: [firefox, vim, emacs, shortcuts]
     </handlers>
   </binding>
 
+  <binding id="textAreas">
+    <handlers>
+
+      <!--Emacs BEGIN-->
+      <handler event="keypress" key="p" modifiers="control" command="cmd_linePrevious"/>
+      <handler event="keypress" key="n" modifiers="control" command="cmd_lineNext"/>
+      <handler event="keypress" key="a" modifiers="control" command="cmd_beginLine"/>
+      <handler event="keypress" key="e" modifiers="control" command="cmd_endLine"/>
+      <handler event="keypress" key="b" modifiers="control" command="cmd_charPrevious"/>
+      <handler event="keypress" key="f" modifiers="control" command="cmd_charNext"/>
+      <handler event="keypress" key="h" modifiers="control" command="cmd_deleteCharBackward"/>
+      <handler event="keypress" key="d" modifiers="control" command="cmd_deleteCharForward"/>
+      <handler event="keypress" key="w" modifiers="control" command="cmd_deleteWordBackward"/>
+      <handler event="keypress" key="u" modifiers="control" command="cmd_deleteToBeginningOfLine"/>
+      <handler event="keypress" key="k" modifiers="control" command="cmd_deleteToEndOfLine"/>
+      <!--Emacs End-->
+
+    </handlers>
+  </binding>
+
   <binding id="browser">
     <handlers>
 
@@ -87,6 +107,8 @@ tags: [firefox, vim, emacs, shortcuts]
 - <kbd>C-w</kbd> 删除光标前一个单词
 - <kbd>C-u</kbd> 删除到行首
 - <kbd>C-k</kbd> 删除到行尾
+- <kbd>C-n</kbd> 光标跳到下一行
+- <kbd>C-p</kbd> 光标跳到上一行
 
 ### 在页面中
 - <kbd>h</kbd><kbd>j</kbd><kbd>k</kbd><kbd>l</kbd> 分别向左/下/上/右托动页面

@@ -11,10 +11,13 @@ tags: [firefox]
 - 压缩/解压缩工具: `zip`/`unzip`, `7z`等
 
 ## 修改`omni.ja`
+### 备份`omni.ja`
+    sudo cp /usr/lib/firefox/omni.ja{,.bk}
+    
 ### 解压缩`omni.ja`
     mkdir ~/firefox && cd ~/firefox
-    cp /usr/lib/firefox/omni.ja .
-    unzip omni.ja -d omni
+    unzip /usr/lib/firefox/omni.ja -d omni
+    # 7z x /usr/lib/firefox/omni.ja -oomni
     cd omni
 
 ### 编辑`browser.xul`
@@ -62,6 +65,7 @@ tags: [firefox]
 
 ### 压缩/覆盖`omni.ja`
     zip -r omni.ja *
+    # 7z a -tzip -mx0 omni.ja *
     sudo mv omni.ja /usr/lib/firefox/
 
 ## 最终效果
@@ -76,10 +80,10 @@ tags: [firefox]
 一定要[启用/禁用]任意一个插件, 来重新加载`omni.ja`
 
 ## 参考
-- https://developer.mozilla.org/en/XUL/PopupGuide/Extensions
-- http://superuser.com/questions/421800/how-to-append-customer-context-menuitem-to-the-last-postion-in-firefox
-- http://superuser.com/questions/421809/how-to-add-a-proxy-on-off-context-menuitem-to-firefox
-- http://kb.mozillazine.org/Firefox_:_Tips_:_Customize_context_menu
-- http://kb.mozillazine.org/UserChrome.css_Element_Names/IDs
-- https://developer.mozilla.org/en/FirefoxOverlayPoints/Menus
-- http://www.rdrop.com/~half/Creations/Writings/TechNotes/firefox.menus.html
+- <https://developer.mozilla.org/en/XUL/PopupGuide/Extensions>
+- <http://superuser.com/questions/421800/how-to-append-customer-context-menuitem-to-the-last-postion-in-firefox>
+- <http://superuser.com/questions/421809/how-to-add-a-proxy-on-off-context-menuitem-to-firefox>
+- <http://kb.mozillazine.org/Firefox_:_Tips_:_Customize_context_menu>
+- <http://kb.mozillazine.org/UserChrome.css_Element_Names/IDs>
+- <https://developer.mozilla.org/en/FirefoxOverlayPoints/Menus>
+- <http://www.rdrop.com/~half/Creations/Writings/TechNotes/firefox.menus.html>
