@@ -135,11 +135,9 @@ $ plink -N -L 2222:github.com:22 -pw 5736f    usassh@free.usassh.com
 ### 修改配置
     $ vim .git/config
     
-{% highlight conf %}
-[remote "origin"]
-	fetch = +refs/heads/*:refs/remotes/origin/*
-    url = ssh://git@localhost:2222/username/project.git
-{% endhighlight %}
+    [remote "origin"]
+        fetch = +refs/heads/*:refs/remotes/origin/*
+        url = ssh://git@localhost:2222/username/project.git
 
 ### 上传代码
     $ git push
@@ -151,3 +149,4 @@ $ plink -N -L 2222:github.com:22 -pw 5736f    usassh@free.usassh.com
 ## 免费SSH
 <iframe src="http://ssh.emdao.com/freessh.php" style="background-color: white;"></iframe>
 
+> 这个网站最近好像有问题.
