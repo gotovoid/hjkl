@@ -37,7 +37,7 @@ UNIX的基本命令行好比砖块, 你完全可以用它们构建出你所需�
 
 vim社区也很活跃, 很多人以vim为嗜好, 在网上分享自己的经验.
 全世界, 每天都有成千上万的新vim用户, 这个数目远远超过了其他编辑器.
-在stackoverflow.com上搜索vim, 有3500+条相关结果.
+在stackoverflow.com上搜索`[vim]`, 有6900+条提问.
 无论你是C++还是java程序员, 甚至是非技术人员, 都可以使用vim.
 vim用户中, 有科学家, 也有百姓. 在vim社区中, 没有贵贱之分.
 只要你肯下功夫, 少看几集连续剧, 就可以抽出时间来学vim了.
@@ -110,6 +110,10 @@ Good Luck!
 也许这张漫画说明的一切:
 
 ![cartoon](/img/emacs_vi_power_drill_cartoon.png)
+
+- emacs:大功率
+- vim:小巧玲珑
+- notepad:原始
 
 ## 国情论?
 
