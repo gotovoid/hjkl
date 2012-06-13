@@ -32,7 +32,7 @@ published:  true
 
     $ vim -V9vim.log
 
-> `-V20vim.log`由3部分组成(即, 选项:`-V`, 级别:`9`, log文件:`vim.log`), 之间无空格.  
+> `-V9vim.log`由3部分组成(即, 选项:`-V`, 级别:`9`, log文件:`vim.log`), 之间无空格.  
 > 不同的级别, log的详细程度不同.
 
 ### 加载vimrc前, 执行命令
@@ -48,6 +48,9 @@ published:  true
     $ VIMINIT='set number' vim
 
 > 启动vim时, 传入环境变量`VIMINIT`, vim就会忽略`~/.vimrc`了.
+> (参考附录, 步骤3.3.3)
+
+-------
 
 在vim中
 -------
@@ -70,8 +73,6 @@ published:  true
 
 附录
 ----
-
-### vim启动过程中, 一共做了下列12件事:
 
 ## vim启动过程中, 一共做了下列12件事:
 
