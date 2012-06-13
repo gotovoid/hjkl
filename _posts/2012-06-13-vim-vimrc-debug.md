@@ -73,6 +73,8 @@ published:  true
 
 ### vim启动过程中, 一共做了下列12件事:
 
+## vim启动过程中, 一共做了下列12件事:
+
 1. 设置`shell`及`term`选项
 
 2. 处理命令行参数
@@ -116,12 +118,19 @@ published:  true
 
 10. 若命令行有`-q`参数, 则读取制定的`quickfix`文件
 
-11. 执行以下启动命令:
+11. 打开所有window
+    1. 若命令行有`-o`参数, 则会打开多个Window(尚未显示)
+    2. 若命令行有`-p`参数, 则会创建多个Tabpage(尚未显示)
+    3. 若命令行有`-q`参数, 则跳到第一个错误处
+    4. 把buffers加载到windows中
+    > `WinEnter`, `BufRead`, `FileType`, `Syntax`等autocmd会被执行
+
+12. 执行以下启动命令:
     1. 若命令行有`-t`参数, 则跳到指定tag
     2. 若命令行有`-c`或`+cmd`参数, 则执行指定的命令
     3. 把`vim_starting`这个feature设为`0`
     4. 若`insertmode`选项已设置, 则进入Insert模式
-    5. 执行`VimEnter`自动命令
+    5. 执行`VimEnter`这个autocmd
 
 
 说明
