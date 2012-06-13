@@ -25,14 +25,14 @@ published:  true
         1. 如果命令行有`-y`参数(Easy模式), 则运行`source $VIMRUNTIME/evim.vim`
         2. 运行`source $VIM/vimrc`
         3. 依次搜索下列环境变量或配置文件(找到其中一个后, 就不继续找了):
-            a. 环境变量: `VIMINIT`
-            b. 用户vimrc: `$HOME/.vimrc`(Unix), `$HOME/_vimrc`(Win32), `$VIM/_vimrc`(Win32)
-            c. 环境变量: `EXINIT`
-            d. 用户exrc: 与vimrc类似, 仅文件名不同, 且默认使用compatible方式运行.
+            1. 环境变量: `VIMINIT`
+            2. 用户vimrc: `$HOME/.vimrc`(Unix), `$HOME/_vimrc`(Win32), `$VIM/_vimrc`(Win32)
+            3. 环境变量: `EXINIT`
+            4. 用户exrc: 与vimrc类似, 仅文件名不同, 且默认使用compatible方式运行.
         4. 若`exrc`选项已设置, 则在当前目录下依此查找3个配置文件(找到一个就不找了):
-            a. `.vimrc`(Unix), `_vimrc`(Win32)
-            b. `_vimrc`(Unix), `.vimrc`(Win32)
-            c. `.exrc`(Unix), `_exrc`(Win32)
+            1. `.vimrc`(Unix), `_vimrc`(Win32)
+            2. `_vimrc`(Unix), `.vimrc`(Win32)
+            3. `.exrc`(Unix), `_exrc`(Win32)
 
 4. 若满足下列条件, 则加载plugin脚本(即执行`:runtime! plugin/**/*.vim`)
     1. `loadplugins`选项未在`vimrc`中被重置
