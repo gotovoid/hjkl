@@ -16,12 +16,12 @@ published:  true
 > 有些参数, 需要在后续步骤中, 才真正执行
 
 3. 执行环境变量或配置文件中的Ex命令:
-    a. 根据命令行`-u XXX`参数的不同, 会执行下列不同的路径:
+    1. 根据命令行`-u XXX`参数的不同, 会执行下列不同的路径:
         1. 若命令行有`-u filename`参数, 则以`filename`为`vimrc`, 并跳到步骤`4`
         2. 若命令行有`-u NORC`参数, 则跳到步骤`4`
         3. 若命令行有`-u NONE`参数, 则跳到步骤`5`
-    b. 若命令行有`-s`参数(Ex模式), 则只解析上述的`-u`参数中的`vimrc`, 并跳到步骤`4`
-    c. 依次执行下列脚本:
+    2. 若命令行有`-s`参数(Ex模式), 则只解析上述的`-u`参数中的`vimrc`, 并跳到步骤`4`
+    3. 依次执行下列脚本:
         1. 如果命令行有`-y`参数(Easy模式), 则运行`source $VIMRUNTIME/evim.vim`
         2. 运行`source $VIM/vimrc`
         3. 依次搜索下列环境变量或配置文件(找到其中一个后, 就不继续找了):
@@ -35,10 +35,10 @@ published:  true
             c. `.exrc`(Unix), `_exrc`(Win32)
 
 4. 若满足下列条件, 则加载plugin脚本(即执行`:runtime! plugin/**/*.vim`)
-    a. `loadplugins`选项未在`vimrc`中被重置
-    b. 命令行无`--noplugin`参数
-    c. 命令行无`-u NONE`参数
-    d. vim具有`+eval`这个feature
+    1. `loadplugins`选项未在`vimrc`中被重置
+    2. 命令行无`--noplugin`参数
+    3. 命令行无`-u NONE`参数
+    4. vim具有`+eval`这个feature
 
 5. 设置`shellpipe`及`shellredir`选项
 
@@ -55,11 +55,11 @@ published:  true
 10. 若命令行有`-q`参数, 则读取制定的`quickfix`文件
 
 11. 执行以下启动命令:
-    a. 若命令行有`-t`参数, 则跳到指定tag
-    b. 若命令行有`-c`或`+cmd`参数, 则执行指定的命令
-    c. 把`vim_starting`这个feature设为`0`
-    d. 若`insertmode`选项已设置, 则进入Insert模式
-    e. 执行`VimEnter`自动命令
+    1. 若命令行有`-t`参数, 则跳到指定tag
+    2. 若命令行有`-c`或`+cmd`参数, 则执行指定的命令
+    3. 把`vim_starting`这个feature设为`0`
+    4. 若`insertmode`选项已设置, 则进入Insert模式
+    5. 执行`VimEnter`自动命令
 
 
 说明
