@@ -54,4 +54,4 @@ vim有两种形式的插件:
 
 - vim插件介绍
     - [下载](http://ubuntuone.com/3NAbwQUsuzJNxrThAMurk0)
-    - 优酷: 审核中
+    - [优酷](http://v.youku.com/v_show/id_XNDEzMDc1NDMy.html)
