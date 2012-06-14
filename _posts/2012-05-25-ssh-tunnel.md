@@ -150,4 +150,14 @@ $ plink -N -L 2222:github.com:22 -pw 5736f    usassh@free.usassh.com
 ## 免费SSH
 <iframe src="http://ssh.emdao.com/freessh.php" style="background-color: white;"></iframe>
 
-> 这个网站最近好像有问题.
+> 这个网站最近好像有问题.  
+
+-----
+
+重要更新
+-------
+
+上文提到的两个代理很不稳定, 因此自动化脚本会运行失败.  
+幸好, 我又找到一个免费ssh: <http://www.sshcenter.info/site-sshcenter/signup.php>  
+由于注册时, 需要输入验证码, 因此没法完全自动化, 顶多半自动化.  
+我会尽快写一个`Greasemonkey`注册助手.
