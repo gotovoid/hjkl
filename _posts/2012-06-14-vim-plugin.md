@@ -80,7 +80,7 @@ pathogen
 
 - pathogen
     - [下载](http://ubuntuone.com/1QFrp0WLPDeVSehPzkPvHw)
-    - [优酷]()
+    - [优酷](http://v.youku.com/v_show/id_XNDE0MTIxMTk2.html)
 
 
 **...未完待续...**
