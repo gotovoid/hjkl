@@ -6,6 +6,12 @@ comments: true
 
 ![flair](http://stackexchange.com/users/flair/141612.png)
 
+![vim](http://www.vim.org/images/vim.vialle.love.anim.gif)
+
+I'm a [vim user](http://stackoverflow.com/tags/vim/topusers)! I hope you too!
+
+Please feel free to send me a message.
+
 ![gmail](/img/gmail.png)
 
 ----
