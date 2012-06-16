@@ -3,7 +3,7 @@ layout:     post
 title:      vim插件
 comments:   true
 category:   vim
-tags:       [vim]
+tags:       [vim, screencast]
 published:  true
 ---
 
@@ -50,26 +50,22 @@ pathogen
 --------
 
 - 中文名称: 病原体
-
 - 下载地址: <https://github.com/tpope/vim-pathogen>
-
 - 安装路径:
     - Linux: `~/.vim/autoload/pathogen.vim`
     - Windows: `C:\Program Files\vim\vimfiles\autoload\pathogen.vim`
-
 - vimrc配置:
 
         call pathogen#infect()
 
 - 工作原理:
-  vim启动过程中, 会自动执行`runtimepath`(简称`rtp`)中的一系列脚本. `pathogen`正利用了这一知识点.
-  它把`~/.vim/bundle/`中的相关文件夹名称, 按照一定的次序添加到了`rtp`中.
-  这样的话, 每当vim启动时, 就会加载安装在`~/.vim/bundle/`中的插件了.
-
+    - vim启动过程中, 会自动执行`runtimepath`(简称`rtp`)中的一系列脚本. `pathogen`正利用了这一知识点.
+    - 它把`~/.vim/bundle/`中的相关文件夹名称, 按照一定的次序添加到了`rtp`中.
+    - 这样的话, 每当vim启动时, 就会加载安装在`~/.vim/bundle/`中的插件了.
+    - 称之为`病原体`, 很恰当!
 - 注意事项:
     - 需要把`filetype plugin indent on`/`syntax on`放到`call pathogen#infect()`后面
     - 安装新插件到`~/.vim/bundle`后, 若该插件含`doc`, 则需要运行`:Helptags`命令, 生成`tags`文件.
-
 
 视频演示
 --------
@@ -77,7 +73,6 @@ pathogen
 - vim插件介绍
     - [下载](http://ubuntuone.com/3NAbwQUsuzJNxrThAMurk0)
     - [优酷](http://v.youku.com/v_show/id_XNDEzMDc1NDMy.html)
-
 - pathogen
     - [下载](http://ubuntuone.com/1QFrp0WLPDeVSehPzkPvHw)
     - [优酷](http://v.youku.com/v_show/id_XNDE0MTIxMTk2.html)
