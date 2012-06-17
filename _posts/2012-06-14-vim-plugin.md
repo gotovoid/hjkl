@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      vim插件
+title:      vim插件介绍
 comments:   true
 category:   vim
 tags:       [vim, screencast]
@@ -38,9 +38,9 @@ vim有两种形式的插件:
 
 - **pathogen**
 - **tabular**
+- **sparkup**
 - nerdtree
 - snipmate
-- sparkup/zencoding
 - surround
 - ...
 
@@ -76,6 +76,18 @@ tabular
 
 > 若不作特殊说明, 下文一律使用`pathogen`来管理新插件.
 
+sparkup
+-------
+- 下载地址: <https://github.com/rstacruz/sparkup>
+- 工作原理:
+    - 按下<kbd>Ctrl-e</kbd>后, 以当前行为参数传递给`sparkup.py`脚本, 把返回的HTML替换掉原来的行.
+    - 按下<kbd>Ctrl-n</kbd>后, 自动跳到空Tag/Attr里面.
+- 注意事项: 该插件只能在编辑HTML时才会生效, 也可以通过`:set ft=html`强制生效.
+- 图片资料:
+    - <http://html5tutorial.net/wp-content/uploads/2009/09/html4-structure-div.gif>
+    - <http://html5tutorial.net/wp-content/uploads/2009/09/html5-structure-div1.gif>
+    - <http://media.smashingmagazine.com/wp-content/uploads/images/html5/html5_structure.png>
+
 --------
 
 视频演示
@@ -90,6 +102,9 @@ tabular
 - tabular
     - [下载](http://ubuntuone.com/2cjmijnIp6DBnBApC2px3N)
     - [优酷](http://v.youku.com/v_show/id_XNDE0NjgwNTU2.html)
+- sparkup
+    - [下载](http://ubuntuone.com/6hBtYaH8ZWpwtTvniHokku)
+    - [优酷](http://v.youku.com/v_show/id_XNDE0OTI3Mjg0.html)
 
 
 **...未完待续...**
