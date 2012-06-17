@@ -88,8 +88,8 @@ tabular
     - [下载](http://ubuntuone.com/1QFrp0WLPDeVSehPzkPvHw)
     - [优酷](http://v.youku.com/v_show/id_XNDE0MTIxMTk2.html)
 - tabular
-    - 下载
-    - 优酷
+    - [下载](http://ubuntuone.com/2cjmijnIp6DBnBApC2px3N)
+    - [优酷](http://v.youku.com/v_show/id_XNDE0NjgwNTU2.html)
 
 
 **...未完待续...**
