@@ -39,9 +39,9 @@ vim有两种形式的插件:
 - **pathogen**
 - **tabular**
 - **sparkup**
+- **surround**
 - nerdtree
 - snipmate
-- surround
 - ...
 
 ---------
@@ -88,6 +88,17 @@ sparkup
     - <http://html5tutorial.net/wp-content/uploads/2009/09/html5-structure-div1.gif>
     - <http://media.smashingmagazine.com/wp-content/uploads/images/html5/html5_structure.png>
 
+surround
+--------
+- 下载地址: <https://github.com/tpope/vim-surround>
+- 工作原理:
+    - 按下<kbd>ys</kbd>, 添加surround
+    - 按下<kbd>cs</kbd>, 改变surround
+    - 按下<kbd>ds</kbd>, 删除surround
+    - 按下<kbd>S</kbd>, surround选中的
+- 注意事项: 通过安装[repeat.vim](https://github.com/tpope/vim-repeat), 来支持<kbd>.</kbd>(repeat)操作
+
+
 --------
 
 视频演示
@@ -105,6 +116,9 @@ sparkup
 - sparkup
     - [下载](http://ubuntuone.com/6hBtYaH8ZWpwtTvniHokku)
     - [优酷](http://v.youku.com/v_show/id_XNDE0OTI3Mjg0.html)
+- surround
+    - [下载](http://ubuntuone.com/4VoeX3F4VqXihd4E9yfiAR)
+    - 优酷(审核中)
 
 
 **...未完待续...**
