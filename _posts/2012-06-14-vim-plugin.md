@@ -98,6 +98,18 @@ surround
     - 按下<kbd>S</kbd>, surround选中的
 - 注意事项: 通过安装[repeat.vim](https://github.com/tpope/vim-repeat), 来支持<kbd>.</kbd>(repeat)操作
 
+command-T
+---------
+- 下载地址: <http://www.vim.org/scripts/script.php?script_id=3025>
+- 工作原理:
+    - <kbd>:CommandT</kbd>, 打开搜索框, 查找file
+    - <kbd>:CommandTBuffer</kbd>, 打开搜索框, 查找buffer
+    - <kbd>Ctrl-k</kbd>/<kbd>Ctrl-j</kbd>, 在列表中, 上下导航
+    - <kbd>Enter</kbd>, 在当前窗口, 打开选中的文件
+    - <kbd>Ctrl-t</kbd>, 在新Tab中, 打开选中的文件
+    - <kbd>Ctrl-s</kbd>/<kbd>Ctrl-v</kbd>, 分割当前窗口, 打开选中的文件
+    - <kbd>Ctrl-c</kbd>/<kbd>Esc</kbd>, 不打开任何文件, 并关闭搜索框
+- 注意事项: vim需要支持ruby扩展. 在vim中输入`:ruby 1`报错, 就表示不支持.
 
 --------
 
@@ -118,6 +130,9 @@ surround
     - [优酷](http://v.youku.com/v_show/id_XNDE0OTI3Mjg0.html)
 - surround
     - [下载](http://ubuntuone.com/4VoeX3F4VqXihd4E9yfiAR)
+    - [优酷](http://v.youku.com/v_show/id_XNDE1MzMzOTY4.html)
+- command-T
+    - [下载](http://ubuntuone.com/1Dxrc54DawBv0cUfdC7FyE)
     - 优酷(审核中)
 
 
