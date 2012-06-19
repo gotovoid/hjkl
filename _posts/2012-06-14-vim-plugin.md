@@ -133,7 +133,7 @@ command-T
     - [优酷](http://v.youku.com/v_show/id_XNDE1MzMzOTY4.html)
 - command-T
     - [下载](http://ubuntuone.com/1Dxrc54DawBv0cUfdC7FyE)
-    - 优酷(审核中)
+    - [优酷](http://v.youku.com/v_show/id_XNDE1OTI2NDcy.html)
 
 
 **...未完待续...**
