@@ -40,6 +40,8 @@ vim有两种形式的插件:
 - **tabular**
 - **sparkup**
 - **surround**
+- **command-T**
+- **yankring**
 - nerdtree
 - snipmate
 - ...
@@ -111,6 +113,16 @@ command-T
     - <kbd>Ctrl-c</kbd>/<kbd>Esc</kbd>, 不打开任何文件, 并关闭搜索框
 - 注意事项: vim需要支持ruby扩展. 在vim中输入`:ruby 1`报错, 就表示不支持.
 
+yankring
+--------
+- 下载地址: <http://www.vim.org/scripts/script.php?script_id=1234>
+- 工作原理:
+    - <kbd>:YRShow</kbd>, 打开YankRing窗口
+    - <kbd>:YRClear</kbd>, 清空YankRing
+    - <kbd>p</kbd>, 粘贴YankRing中最顶的一个
+    - <kbd>Ctrl-p</kbd>, 粘贴YankRing中上一个
+    - <kbd>Ctrl-n</kbd>, 粘贴YankRing中下一个
+
 --------
 
 视频演示
@@ -134,6 +146,9 @@ command-T
 - command-T
     - [下载](http://ubuntuone.com/1Dxrc54DawBv0cUfdC7FyE)
     - [优酷](http://v.youku.com/v_show/id_XNDE1OTI2NDcy.html)
+- yankring
+    - [下载](http://ubuntuone.com/1tmePAIKKQ5Egh4vRMBi9m)
+    - [优酷](http://v.youku.com/v_show/id_XNDE2Mjc5NzY0.html)
 
 
 **...未完待续...**
