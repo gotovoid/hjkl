@@ -170,7 +170,7 @@ fugitive
     - [优酷](http://v.youku.com/v_show/id_XNDE2Mjc5NzY0.html)
 - fugitive
     - [下载](http://ubuntuone.com/5r0AAuhxEg7vnwCwciAKCz)
-    - 优酷(审核中)
+    - [优酷](http://v.youku.com/v_show/id_XNDE3MjU3ODYw.html)
 
 
 **...未完待续...**
