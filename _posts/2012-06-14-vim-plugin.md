@@ -141,6 +141,12 @@ fugitive
     - <http://marklodato.github.com/visual-git-guide/index-en.html>
     - <http://gitref.org/>
 
+minim
+-----
+- 插件简介: 轻量级中文输入法
+- 下载地址: <https://github.com/gotovoid/dot/raw/master/.vim/plugin/minim.vim>
+- 工作原理: <kbd>Ctrl-x</kbd><kbd>Ctrl-u</kbd>, 调用插件中的MiniM函数, 以弹出菜单的形式显示候选词语.
+- 严重警告: 不要输入敏感词, 否则后果自负!
 
 --------
 
@@ -171,6 +177,9 @@ fugitive
 - fugitive
     - [下载](http://ubuntuone.com/5r0AAuhxEg7vnwCwciAKCz)
     - [优酷](http://v.youku.com/v_show/id_XNDE3MjU3ODYw.html)
+- minim
+    - [下载](http://ubuntuone.com/3XSLL7z3wtySFWGkibiojJ)
+    - 优酷(审核中)
 
 
 **...未完待续...**
