@@ -42,6 +42,7 @@ vim有两种形式的插件:
 - **surround**
 - **command-T**
 - **yankring**
+- **fugitive**
 - nerdtree
 - snipmate
 - ...
@@ -123,6 +124,24 @@ yankring
     - <kbd>Ctrl-p</kbd>, 粘贴YankRing中上一个
     - <kbd>Ctrl-n</kbd>, 粘贴YankRing中下一个
 
+fugitive
+--------
+- 插件简介: 我的天哪, fugitive太强大了, 不会是非法的吧!
+- 下载地址: <https://github.com/tpope/vim-fugitive>
+- 工作原理:
+    - <kbd>:Git</kbd>     , 运行git ...
+    - <kbd>:Gstatus</kbd> , 运行git status
+    - <kbd>:Gcommit</kbd> , 运行git commit
+    - <kbd>:Gdiff</kbd>   , 运行git diff
+    - <kbd>:Glog</kbd>    , 运行git log file
+    - <kbd>:Ge</kbd>      , 运行e file
+    - <kbd>:Gread</kbd>   , 运行git checkout file
+    - <kbd>:Gwrite</kbd>  , 运行git add file
+- 参考资料:
+    - <http://marklodato.github.com/visual-git-guide/index-en.html>
+    - <http://gitref.org/>
+
+
 --------
 
 视频演示
@@ -149,6 +168,9 @@ yankring
 - yankring
     - [下载](http://ubuntuone.com/1tmePAIKKQ5Egh4vRMBi9m)
     - [优酷](http://v.youku.com/v_show/id_XNDE2Mjc5NzY0.html)
+- fugitive
+    - [下载](http://ubuntuone.com/5r0AAuhxEg7vnwCwciAKCz)
+    - 优酷(审核中)
 
 
 **...未完待续...**
