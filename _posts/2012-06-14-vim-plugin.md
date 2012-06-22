@@ -37,13 +37,8 @@ vim有两种形式的插件:
 接下来, 我会介绍一些比较流行的vim插件:
 
 - **pathogen**
-- **tabular**
 - **sparkup**
-- **surround**
-- **command-T**
-- **yankring**
 - **fugitive**
-- **alternate**
 - nerdtree
 - snipmate
 - ...
@@ -160,6 +155,15 @@ alternate
     - <kbd>:AT</kbd>, 类似于`:tabe`
     - <kbd>:let g:alternateExtensions_foo = 'bar,baz'</kbd>, 定义新的绑定: `foo <=> bar,baz`
 
+easymotion
+----------
+- 插件简介: 先精确定位, 再跳上去.
+- 下载地址: <https://github.com/Lokaltog/vim-easymotion>
+- 工作原理:
+    - 首先`:let mapleader=','`(最好在`vimrc`中设置)
+    - 然后输入<kbd>,,f</kbd>{char}, 从光标位置处向后查找所有{char}, 并且临时把它们替换成a,b,c...
+    - 最后输入<kbd>b</kbd>, 光标就跳到第二个{char}上了.
+
 --------
 
 视频演示
@@ -167,33 +171,27 @@ alternate
 
 - vim插件介绍
     - [下载](http://ubuntuone.com/3NAbwQUsuzJNxrThAMurk0)
-    - [优酷](http://v.youku.com/v_show/id_XNDEzMDc1NDMy.html)
 - pathogen
     - [下载](http://ubuntuone.com/1QFrp0WLPDeVSehPzkPvHw)
-    - [优酷](http://v.youku.com/v_show/id_XNDE0MTIxMTk2.html)
 - tabular
     - [下载](http://ubuntuone.com/2cjmijnIp6DBnBApC2px3N)
-    - [优酷](http://v.youku.com/v_show/id_XNDE0NjgwNTU2.html)
 - sparkup
     - [下载](http://ubuntuone.com/6hBtYaH8ZWpwtTvniHokku)
-    - [优酷](http://v.youku.com/v_show/id_XNDE0OTI3Mjg0.html)
 - surround
     - [下载](http://ubuntuone.com/4VoeX3F4VqXihd4E9yfiAR)
-    - [优酷](http://v.youku.com/v_show/id_XNDE1MzMzOTY4.html)
 - command-T
     - [下载](http://ubuntuone.com/1Dxrc54DawBv0cUfdC7FyE)
-    - [优酷](http://v.youku.com/v_show/id_XNDE1OTI2NDcy.html)
 - yankring
     - [下载](http://ubuntuone.com/1tmePAIKKQ5Egh4vRMBi9m)
-    - [优酷](http://v.youku.com/v_show/id_XNDE2Mjc5NzY0.html)
 - fugitive
     - [下载](http://ubuntuone.com/5r0AAuhxEg7vnwCwciAKCz)
-    - [优酷](http://v.youku.com/v_show/id_XNDE3MjU3ODYw.html)
 - minim(beta)
     - [下载](http://ubuntuone.com/3XSLL7z3wtySFWGkibiojJ)
-    - [优酷](http://v.youku.com/v_show/id_XNDE3NDg0MjUy.html)
 - alternate
     - [下载](http://ubuntuone.com/6UVtcfYFxiKU2dIXvRTCLT)
-    - [优酷](http://v.youku.com/v_show/id_XNDE3NzUyNjI0.html?f=17756150)
+- easymotion
+    - [下载](http://ubuntuone.com/3OdOiQh4iXBykDRtXG3z5i)
+
+[优酷专辑](http://www.youku.com/playlist_show/id_17756150.html)
 
 **...未完待续...**
