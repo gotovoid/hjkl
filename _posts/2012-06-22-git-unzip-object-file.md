@@ -12,20 +12,17 @@ published:  true
 
 切换到obj目录
 -------------
-
     $ cd .git/objects/a5
     $ ls
     0c564e401a1883414226893cbc6c3fd833edc7
 
 使用git自带命令
 ---------------
-
     $ git show --raw a50c56
     $ git cat-file -p a50c56
 
 使用zlib解压缩
 ---------------
-
     $ python -c '
     > import zlib, sys
     > print(zlib.decompress(sys.stdin.read()))
@@ -40,3 +37,6 @@ published:  true
     > ' <0c564e401a1883414226893cbc6c3fd833edc7
     a50c564e401a1883414226893cbc6c3fd833edc7
 
+定义一个alias
+-------------
+    alias deflate='python -c "import sys; sys.stdout.write(sys.stdin.read().decode(\"zlib\"))"'
