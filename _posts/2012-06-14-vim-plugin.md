@@ -194,6 +194,6 @@ alternate
     - [优酷](http://v.youku.com/v_show/id_XNDE3NDg0MjUy.html)
 - alternate
     - [下载](http://ubuntuone.com/6UVtcfYFxiKU2dIXvRTCLT)
-    - 优酷(审核中)
+    - [优酷](http://v.youku.com/v_show/id_XNDE3NzUyNjI0.html?f=17756150)
 
 **...未完待续...**
