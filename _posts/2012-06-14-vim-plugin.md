@@ -43,6 +43,7 @@ vim有两种形式的插件:
 - **command-T**
 - **yankring**
 - **fugitive**
+- **alternate**
 - nerdtree
 - snipmate
 - ...
@@ -148,6 +149,17 @@ minim
 - 工作原理: <kbd>Ctrl-x</kbd><kbd>Ctrl-u</kbd>, 调用插件中的MiniM函数, 以弹出菜单的形式显示候选词语.
 - 严重警告: 不要输入敏感词, 否则后果自负!
 
+alternate
+---------
+- 插件简介: 让你快速地在`*.{h,cpp}`文件之间切换
+- 下载地址: <http://www.vim.org/scripts/script.php?script_id=31>
+- 工作原理:
+    - <kbd>:A</kbd>, 类似于`:e %:r.cpp`
+    - <kbd>:AV</kbd>, 类似于`:vsplit`
+    - <kbd>:AS</kbd>, 类似于`:split`
+    - <kbd>:AT</kbd>, 类似于`:tabe`
+    - <kbd>:let g:alternateExtensions_foo = 'bar,baz'</kbd>, 定义新的绑定: `foo <=> bar,baz`
+
 --------
 
 视频演示
@@ -177,9 +189,11 @@ minim
 - fugitive
     - [下载](http://ubuntuone.com/5r0AAuhxEg7vnwCwciAKCz)
     - [优酷](http://v.youku.com/v_show/id_XNDE3MjU3ODYw.html)
-- minim
+- minim(beta)
     - [下载](http://ubuntuone.com/3XSLL7z3wtySFWGkibiojJ)
+    - [优酷](http://v.youku.com/v_show/id_XNDE3NDg0MjUy.html)
+- alternate
+    - [下载](http://ubuntuone.com/6UVtcfYFxiKU2dIXvRTCLT)
     - 优酷(审核中)
-
 
 **...未完待续...**
