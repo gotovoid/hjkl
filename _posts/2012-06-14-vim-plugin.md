@@ -39,6 +39,7 @@ vim有两种形式的插件:
 - **pathogen**
 - **sparkup**
 - **fugitive**
+- **vimwiki**
 - nerdtree
 - snipmate
 - ...
@@ -164,6 +165,12 @@ easymotion
     - 然后输入<kbd>,,f</kbd>{char}, 从光标位置处向后查找所有{char}, 并且临时把它们替换成a,b,c...
     - 最后输入<kbd>b</kbd>, 光标就跳到第二个{char}上了.
 
+vimwiki
+-------
+- 插件简介: 个人日记本
+- 下载地址: <http://code.google.com/p/vimwiki/downloads/list>
+- 注意事项: 先把vim基本功练好, 再玩这个插件!
+
 --------
 
 视频演示
@@ -191,6 +198,8 @@ easymotion
     - [下载](http://ubuntuone.com/6UVtcfYFxiKU2dIXvRTCLT)
 - easymotion
     - [下载](http://ubuntuone.com/3OdOiQh4iXBykDRtXG3z5i)
+- vimwiki
+    - [下载](http://ubuntuone.com/6k4KOqIGj5hfI2DmBHWcXJ)
 
 [优酷专辑](http://www.youku.com/playlist_show/id_17756150.html)
 
