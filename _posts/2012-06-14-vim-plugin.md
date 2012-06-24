@@ -199,7 +199,8 @@ vimwiki
 - easymotion
     - [下载](http://ubuntuone.com/3OdOiQh4iXBykDRtXG3z5i)
 - vimwiki
-    - [下载](http://ubuntuone.com/6k4KOqIGj5hfI2DmBHWcXJ)
+    - [下载1](http://ubuntuone.com/6k4KOqIGj5hfI2DmBHWcXJ)
+    - [下载2](http://ubuntuone.com/1Br6gJacWwZODU8cdrFn23)
 
 [优酷专辑](http://www.youku.com/playlist_show/id_17756150.html)
 
