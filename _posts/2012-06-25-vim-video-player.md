@@ -11,11 +11,11 @@ published:  true
 同样地, 在linux中, 通过组合不同的tool, 就可以构造出新的tool.  
 vim不仅可以自由地与外部tool交互, 而且有自己的scripting语言.  
 我之所以喜欢vim, 是因为vim有数不清的玩法, 永远不会玩腻了!  
-下面我就来实现一个ascii播放器.
+下面我就来实现一个非常简单的ascii播放器.
 
 
 ## bash版
-{% hightlight bash %}
+{% highlight bash %}
     #!/bin/bash
     # ┏┓ ┏━┓╺┳┓   ┏━┓┏━┓┏━┓╻  ┏━╸
     # ┣┻┓┣━┫ ┃┃   ┣━┫┣━┛┣━┛┃  ┣╸ 
@@ -31,9 +31,10 @@ vim不仅可以自由地与外部tool交互, 而且有自己的scripting语言.
 
     mpg321 $audio &
     for i in $image/*.jpg; do jp2a $i; sleep 0.06; done
-{% endhightlight %}
+{% endhighlight %}
 
 ## vim版
+{% highlight vim %}
     " ┏┓ ┏━┓╺┳┓   ┏━┓┏━┓┏━┓╻  ┏━╸
     " ┣┻┓┣━┫ ┃┃   ┣━┫┣━┛┣━┛┃  ┣╸ 
     " ┗━┛╹ ╹╺┻┛   ╹ ╹╹  ╹  ┗━╸┗━╸
@@ -59,6 +60,7 @@ vim不仅可以自由地与外部tool交互, 而且有自己的scripting语言.
     
     call Display('r!toilet -f mono12 END', 3)
     quit!
+{% endhighlight %}
 
 ## 视频演示
 - [下载](#)
