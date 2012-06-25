@@ -34,7 +34,6 @@ vim不仅可以自由地与外部tool交互, 而且有自己的scripting语言.
 {% endhightlight %}
 
 ## vim版
-{% hightlight vim %}
     " ┏┓ ┏━┓╺┳┓   ┏━┓┏━┓┏━┓╻  ┏━╸
     " ┣┻┓┣━┫ ┃┃   ┣━┫┣━┛┣━┛┃  ┣╸ 
     " ┗━┛╹ ╹╺┻┛   ╹ ╹╹  ╹  ┗━╸┗━╸
@@ -60,7 +59,6 @@ vim不仅可以自由地与外部tool交互, 而且有自己的scripting语言.
     
     call Display('r!toilet -f mono12 END', 3)
     quit!
-{% endhightlight %}
 
 ## 视频演示
 - [下载](#)
