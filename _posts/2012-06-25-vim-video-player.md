@@ -2,7 +2,7 @@
 layout: post
 title: vim文本player
 category: vim
-tags: [vim, ascii]
+tags: [vim, bash, ascii]
 comments:   true
 published:  true
 ---
@@ -20,6 +20,7 @@ vim不仅可以自由地与外部tool交互, 而且有自己的scripting语言.
 - mpg321 - 命令行player
 
 ## 输入文件
+任何ffmpeg所支持的视频文件均可, 我以bad-apple.vim为例:
 - [bad-apple.flv](http://v.youku.com/v_show/id_XMzQxNDY0MDY0.html)
 - [下载](http://ubuntuone.com/125AH5y0lHQd2kbxvmZPqu)
 
@@ -54,6 +55,7 @@ vim不仅可以自由地与外部tool交互, 而且有自己的scripting语言.
     $ ./bad-apple.sh bad-apple.flv
 
 ## vim版
+### 代码
 {% highlight vim %}
     " ┏┓ ┏━┓╺┳┓   ┏━┓┏━┓┏━┓╻  ┏━╸
     " ┣┻┓┣━┫ ┃┃   ┣━┫┣━┛┣━┛┃  ┣╸ 
@@ -92,9 +94,9 @@ vim不仅可以自由地与外部tool交互, 而且有自己的scripting语言.
 ### 运行
     $ vim -u NONE +so% bad-apple.vim
     
-> 运行该vim脚本前, 请使用ffmpeg生成`./tmp/img/*.jpg`
+> 运行该vim脚本前, 请使用ffmpeg生成`./tmp/*.mp3`以及`./tmp/img/*.jpg`
 
 ## 视频演示
-- [下载](#)
-- [优酷](#)
+- [下载](http://ubuntuone.com/0HGTYIcsRWexWZ1l8gjVqT)
+- [优酷](http://v.youku.com/v_show/id_XNDE5MzgyMzk2.html)
 - [网友的视频](http://v.youku.com/v_show/id_XMTQ0MjM4Nzg4.html)
