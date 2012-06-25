@@ -1,8 +1,8 @@
 ---
 layout: post
 title: vim视频播放器
-category: c4f
-tags: [c4f, vim, ascii]
+category: vim
+tags: [vim, vim, ascii]
 comments:   true
 published:  true
 ---
