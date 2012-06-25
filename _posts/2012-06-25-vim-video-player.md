@@ -20,7 +20,8 @@ vim不仅可以自由地与外部tool交互, 而且有自己的scripting语言.
 - mpg321 - 命令行player
 
 ## 输入文件
-[bad-apple.flv](http://v.youku.com/v_show/id_XMzQxNDY0MDY0.html)
+- [bad-apple.flv](http://v.youku.com/v_show/id_XMzQxNDY0MDY0.html)
+- [下载](http://ubuntuone.com/125AH5y0lHQd2kbxvmZPqu)
 
 ## bash版
 ### 代码
@@ -44,7 +45,7 @@ vim不仅可以自由地与外部tool交互, 而且有自己的scripting语言.
 
 ### 运行
     $ chmod +x bad-apple.sh
-    $ ./bad-apple.sh
+    $ ./bad-apple.sh bad-apple.flv
 
 ## vim版
 {% highlight vim %}
@@ -52,6 +53,10 @@ vim不仅可以自由地与外部tool交互, 而且有自己的scripting语言.
     " ┣┻┓┣━┫ ┃┃   ┣━┫┣━┛┣━┛┃  ┣╸ 
     " ┗━┛╹ ╹╺┻┛   ╹ ╹╹  ╹  ┗━╸┗━╸
     " by Kev++
+    
+    if empty(glob('./tmp'))
+        finish
+    endif
     
     fun! Display(cmd, delay)
         %d
@@ -74,7 +79,8 @@ vim不仅可以自由地与外部tool交互, 而且有自己的scripting语言.
     argdel *
     
     call Display('r!toilet -f mono12 END', 3)
-    quit!
+    
+    undo
 {% endhighlight %}
 
 ### 运行
