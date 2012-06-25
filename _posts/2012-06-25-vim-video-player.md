@@ -2,7 +2,7 @@
 layout: post
 title: vim视频播放器
 category: c4f
-tags: [c4f, vim, ffmpeg, jp2a, mpg321]
+tags: [c4f, vim, ascii]
 comments:   true
 published:  true
 ---
@@ -13,6 +13,11 @@ vim不仅可以自由地与外部tool交互, 而且有自己的scripting语言.
 我之所以喜欢vim, 是因为vim有数不清的玩法, 永远不会玩腻了!  
 下面我就来实现一个非常简单的ascii播放器.
 
+## 工具介绍
+- vim - 高级text editor
+- ffmpeg - 从mp4中提取jpg/mp3
+- jp2a  - 把jpg转换成ascii
+- mpg321 - 命令行player
 
 ## bash版
 {% highlight bash %}
@@ -61,6 +66,8 @@ vim不仅可以自由地与外部tool交互, 而且有自己的scripting语言.
     call Display('r!toilet -f mono12 END', 3)
     quit!
 {% endhighlight %}
+
+> 运行该脚本前, 请使用ffmpeg生成`img/*.jpg`
 
 ## 视频演示
 - [下载](#)
