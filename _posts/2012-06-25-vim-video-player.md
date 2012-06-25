@@ -15,11 +15,15 @@ vim不仅可以自由地与外部tool交互, 而且有自己的scripting语言.
 
 ## 工具介绍
 - vim - 高级text editor
-- ffmpeg - 从mp4中提取jpg/mp3
+- ffmpeg - 从flv中提取jpg/mp3
 - jp2a  - 把jpg转换成ascii
 - mpg321 - 命令行player
 
+## 输入文件
+[bad-apple.flv](http://v.youku.com/v_show/id_XMzQxNDY0MDY0.html)
+
 ## bash版
+### 代码
 {% highlight bash %}
     #!/bin/bash
     # ┏┓ ┏━┓╺┳┓   ┏━┓┏━┓┏━┓╻  ┏━╸
@@ -37,6 +41,10 @@ vim不仅可以自由地与外部tool交互, 而且有自己的scripting语言.
     mpg321 $audio &
     for i in $image/*.jpg; do jp2a $i; sleep 0.08; done
 {% endhighlight %}
+
+### 运行
+    $ chmod +x bad-apple.sh
+    $ ./bad-apple.sh
 
 ## vim版
 {% highlight vim %}
@@ -56,6 +64,8 @@ vim不仅可以自由地与外部tool交互, 而且有自己的scripting语言.
         call Display('r!toilet -f mono12 '.i, 1)
     endfor
     
+    call system('mpg321 tmp/*.mp3&')
+    
     silent! argdel *
     argadd ./tmp/img/*.jpg
     for i in argv()
@@ -67,7 +77,10 @@ vim不仅可以自由地与外部tool交互, 而且有自己的scripting语言.
     quit!
 {% endhighlight %}
 
-> 运行该脚本前, 请使用ffmpeg生成`./tmp/img/*.jpg`
+### 运行
+    $ vim -u NONE +so% bad-apple.vim
+    
+> 运行该vim脚本前, 请使用ffmpeg生成`./tmp/img/*.jpg`
 
 ## 视频演示
 - [下载](#)
