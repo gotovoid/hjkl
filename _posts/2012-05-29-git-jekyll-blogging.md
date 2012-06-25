@@ -1,11 +1,24 @@
 ---
 layout:     post
-title:      使用github/jekyll/disqus写博客
+title:      使用github+jekyll写博客
 comments:   true
-category:   github
-tags:       [github, jekyll, disqus]
+category:   git
+tags:       [git, jekyll]
 published:  true
 ---
+
+我曾经使用过很多的blog系统(sina, sohu, 163, qq...).
+一直都是寄人篱下, 文章莫名奇妙被删也是家常便饭.
+我也生怕这些网站, 总有一天会倒闭, blog变成了陪葬品.
+多年来我苦不堪言, 因为我没有钱去购买blog空间.
+最近, 发现了github的pages功能, 完美地解决了我的问题.
+
+使用github写博客的好处:
+
+- 完全免费
+- 非常稳定
+- 版本控制
+- 随心所欲
 
 ## 安装软件
     # jekyll框架
@@ -17,14 +30,15 @@ published:  true
 
 ## 创建github项目
 
->按照[官方文档](http://help.github.com/pages/)所述, 创建一个分支`gh-pages`.
+> 按照[官方文档](http://help.github.com/pages/)所述, 创建一个分支`gh-pages`.  
+> 其实没有必要创建分支, 任何分支都是可以的, 推荐用`master`.
 
     git clone git@github.com:gotovoid/hjkl.git
 
 ## 签出代码
     # 从github获取代码
     git fetch origin
-    # 创建并切换到分支
+    # 创建并切换到分支(如果直接用master, 这一步就省了)
     git checkout -b gh-pages origin/gh-pages
 
 ## 网站结构
@@ -75,7 +89,7 @@ markdown:    rdiscount
         <div id="disqus_thread"></div>
         <script type="text/javascript">
             /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-            var disqus_shortname = 'hjkl-me'; // required: replace example with your forum shortname
+            var disqus_shortname = 'your-name'; // required: replace example with your forum shortname
             var disqus_developer = 1;
 
             /* * * DO NOT EDIT BELOW THIS LINE * * */

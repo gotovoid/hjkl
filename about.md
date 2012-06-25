@@ -112,7 +112,7 @@ __godaddy__域名50RMB/年, __github__免费托管.
 同时希望认识几个vim爱好者.
 
 
-[1]: http://hjkl.me/github/2012/05/29/jekyll.html
+[1]: http://hjkl.me/git/2012/05/29/git-jekyll-blogging.html
 [2]: http://www.tudou.com/programs/view/Nbz3C92uFuQ/
 [3]: http://hjkl.me/vim/2012/06/14/vim-plugin.html
 
