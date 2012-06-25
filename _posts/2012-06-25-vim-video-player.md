@@ -1,8 +1,8 @@
 ---
 layout: post
-title: vim视频播放器
+title: vim文本player
 category: vim
-tags: [vim, vim, ascii]
+tags: [vim, ascii]
 comments:   true
 published:  true
 ---
@@ -40,8 +40,14 @@ vim不仅可以自由地与外部tool交互, 而且有自己的scripting语言.
     [ -e $audio ] || ffmpeg -i $video -vn $audio
 
     mpg321 $audio &
-    for i in $image/*.jpg; do jp2a $i; sleep 0.08; done
+    for i in $image/*.jpg
+    do
+        jp2a $i
+        sleep 0.08
+    done
 {% endhighlight %}
+
+> 统计出jp2a的平均运行时间`t`后, `0.1-t`就是sleep时间
 
 ### 运行
     $ chmod +x bad-apple.sh
@@ -90,4 +96,5 @@ vim不仅可以自由地与外部tool交互, 而且有自己的scripting语言.
 
 ## 视频演示
 - [下载](#)
-- [在线](#)
+- [优酷](#)
+- [网友的视频](http://v.youku.com/v_show/id_XMTQ0MjM4Nzg4.html)
