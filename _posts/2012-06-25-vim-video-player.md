@@ -29,13 +29,13 @@ vim不仅可以自由地与外部tool交互, 而且有自己的scripting语言.
 
     video=${1:?input is empty}
     audio=${video%.*}.mp3
-    image=img
+    image=./tmp/img
 
-    [ -e $image ] || { mkdir $image && ffmpeg -i $video -r 10 $image/%05d.jpg; }
+    [ -e $image ] || { mkdir -p $image && ffmpeg -i $video -r 10 $image/%05d.jpg; }
     [ -e $audio ] || ffmpeg -i $video -vn $audio
 
     mpg321 $audio &
-    for i in $image/*.jpg; do jp2a $i; sleep 0.06; done
+    for i in $image/*.jpg; do jp2a $i; sleep 0.08; done
 {% endhighlight %}
 
 ## vim版
@@ -57,9 +57,9 @@ vim不仅可以自由地与外部tool交互, 而且有自己的scripting语言.
     endfor
     
     silent! argdel *
-    argadd img/*.jpg
+    argadd ./tmp/img/*.jpg
     for i in argv()
-        call Display('r!jp2a '.i, '8m')
+        call Display('r!jp2a '.i, '80m')
     endfor
     argdel *
     
@@ -67,7 +67,7 @@ vim不仅可以自由地与外部tool交互, 而且有自己的scripting语言.
     quit!
 {% endhighlight %}
 
-> 运行该脚本前, 请使用ffmpeg生成`img/*.jpg`
+> 运行该脚本前, 请使用ffmpeg生成`./tmp/img/*.jpg`
 
 ## 视频演示
 - [下载](#)
