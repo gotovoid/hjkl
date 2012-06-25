@@ -2,7 +2,7 @@
 layout: post
 title: vim文本player
 category: vim
-tags: [vim, bash, ascii]
+tags: [vim, bash, ascii, screencast]
 comments:   true
 published:  true
 ---
@@ -20,7 +20,7 @@ vim不仅可以自由地与外部tool交互, 而且有自己的scripting语言.
 - mpg321 - 命令行player
 
 ## 输入文件
-任何ffmpeg所支持的视频文件均可, 我以bad-apple.vim为例:
+任何ffmpeg所支持的视频文件均可, 我以bad-apple.flv为例:
 
 - [bad-apple.flv](http://v.youku.com/v_show/id_XMzQxNDY0MDY0.html)
 - [下载](http://ubuntuone.com/125AH5y0lHQd2kbxvmZPqu)
