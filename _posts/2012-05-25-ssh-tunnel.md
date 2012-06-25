@@ -3,6 +3,8 @@ layout: post
 title: 免费SSH看Youtube
 category: ssh
 tags: [ssh, plink, gfw, screencast]
+comments:   true
+published:  true
 ---
 
 ## 工具介绍
