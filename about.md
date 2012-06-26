@@ -70,6 +70,7 @@ __godaddy__域名50RMB/年, __github__免费托管.
 ----
 
 ## 透过现象看本质
+
 从中学起, 开始接受"唯物主义"洗脑, 把**上帝**/**神**/**唯心主义**之类的东西, 一律作为迷信看待.  
 牛顿晚年放弃科学而研究神学, 我百思不得其解. 为什么连他这种人也会迷信?  
 现在想想, 我当时正是太愚昧了. 我对**唯物主义**不假思索, 就全盘接受了.  
@@ -89,17 +90,18 @@ __godaddy__域名50RMB/年, __github__免费托管.
     # 切换到刚才编辑的文件, 再也不用`:e#`了
     Ctrl-^
 
+    # 输入UNICODE符号: ✓✗
+    Ctrl-k OK
+    Ctrl-k XX
+
+
 ## vim视频
 
-如果想学好vim, 最好是看看vim视频教程.
-说实话, 我通过看国外的vim视频, 学到很多东西.
-国内的vim视频教程, 一般都是培训机构录制的.
-这些视频往往篇幅很大, 照着PPT念vim的基本用法.
+如果想学好vim, 最好是看看vim视频教程. 说实话, 我通过看国外的vim视频, 学到很多东西.
+国内的vim视频教程, 一般都是培训机构录制的. 这些视频往往篇幅很大, 照着PPT念vim的基本用法.
 对已经入门的朋友帮助不大.
 
-我制作了一些[vim视频][3], 抛砖引玉.
-真心希望大家能够提出建议与意见.
-同时希望认识几个vim爱好者.
+我制作了一些[vim视频][3], 抛砖引玉. 真心希望大家能够提出建议与意见. 同时希望认识几个vim爱好者.
 
 ### 视频录制参数
 
@@ -112,6 +114,16 @@ __godaddy__域名50RMB/年, __github__免费托管.
     Zero Compression            ✓
     Quick Subsampling           ✗
     Full shots at every frame   ✓
+
+### 视频编码命令
+
+    ffmpeg -i input.ogv -vcodec libx264 output.mp4
+    
+
+## NEXT
+### shell视频
+
+如果大家对**命令行**感兴趣, 我可以制作一系列的linux shell视频.
 
 [1]: http://hjkl.me/git/2012/05/29/git-jekyll-blogging.html
 [2]: http://www.tudou.com/programs/view/Nbz3C92uFuQ/
