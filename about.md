@@ -84,20 +84,8 @@ __godaddy__域名50RMB/年, __github__免费托管.
 
 ## random vim tips
 
-    # 列出所有buffer
-    :ls!
-
-    # 彻底删除指定buffer
-    :bw 4
-
-    # 在另一个Tab中, 打开帮助文档
-    :tab help vim
-
-    # 打开所有buffer, 到不同的Tab中
-    :tab ball
-
-    # 运行date命令, 把结果显示到另一个窗口中
-    :vert new +r!date
+    # 切换到刚才编辑的文件, 再也不用`:e#`了
+    Ctrl-^
 
 ## vim视频
 
