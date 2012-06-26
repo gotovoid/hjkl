@@ -1,8 +1,8 @@
 ---
-layout: post
-title: 使用APT软件包管理器
-category: ubuntu
-tags: [ubuntu, apt]
+layout:    post
+title:     使用APT软件包管理器
+category:  tool
+tags:      [tool, apt]
 ---
 
 ## 安装
