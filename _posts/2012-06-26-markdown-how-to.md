@@ -10,7 +10,7 @@ published:  true
 Markdown是一款轻量级的markup语言.
 其富有表达力的简洁, 深受广大计算机爱好者的喜爱.
 引用场景包括: 博客, 论文, 著书... 一切皆有可能.
-等不及了吧, 把下面的代码贴到[在线编辑](http://jrham.es/instantmark/)里面试一试.
+想看看效果吗? 把下面的代码贴到[在线编辑器](http://jrham.es/instantmark/)里面试一试.
 
 ## Heading(标题)
 
@@ -88,3 +88,5 @@ Markdown是一款轻量级的markup语言.
 
 ## 视频演示
 
+- [下载](http://ubuntuone.com/5be5kWGrYTvIU6uSzECfzk)
+- 优酷(审核中)
