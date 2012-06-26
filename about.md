@@ -101,6 +101,17 @@ __godaddy__域名50RMB/年, __github__免费托管.
 真心希望大家能够提出建议与意见.
 同时希望认识几个vim爱好者.
 
+### 视频录制参数
+
+    recordMyDesktop: Advanced » Performance
+    ---------------------------------------
+    参数                        值
+    ---------------------------------------
+    Frames Per Second           10
+    Encode One the Fly          ✓
+    Zero Compression            ✓
+    Quick Subsampling           ✗
+    Full shots at every frame   ✓
 
 [1]: http://hjkl.me/git/2012/05/29/git-jekyll-blogging.html
 [2]: http://www.tudou.com/programs/view/Nbz3C92uFuQ/
