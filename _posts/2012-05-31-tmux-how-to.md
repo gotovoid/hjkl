@@ -1,9 +1,9 @@
 ---
 layout:     post
-title:      tmux教程
+title:      tmux介绍
 comments:   true
-category:   tmux
-tags:       [tmux, terminal, screencast, beta]
+category:   tool
+tags:       [tool, tmux, screencast, beta]
 published:  true
 ---
 
