@@ -7,10 +7,12 @@ tags:       [vim, screencast]
 published:  true
 ---
 
+## 介绍
+
 网上有很多在线markdown编辑器, 当你在文本框内输入markdown后, 在右侧就同步显示相对应的HTML.  
 根据该原理, 可以制作一个vim版的markdown编辑器. 由于vim不是web浏览器, 就在右侧显示HTML代码吧!
 
-# 工具
+## 工具
 
 - vim - 高级文本编辑器
 - firefox - 网页浏览器
@@ -18,7 +20,7 @@ published:  true
 - pandoc - 增强版markdown解析器
 - tidy - HTML格式化工具
 
-# 配置
+## 配置
 
 {% highlight vim %}
 " vimrc4md
