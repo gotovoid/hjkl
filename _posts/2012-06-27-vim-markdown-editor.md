@@ -9,8 +9,10 @@ published:  true
 
 ## 介绍
 
-网上有很多在线markdown编辑器, 当你在文本框内输入markdown后, 在右侧就同步显示相对应的HTML.  
+网上有很多[在线markdown编辑器](http://jrham.es/instantmark/), 当你在文本框内输入markdown后, 在右侧就同步显示相对应的HTML.  
 根据该原理, 可以制作一个vim版的markdown编辑器. 由于vim不是web浏览器, 就在右侧显示HTML代码吧!
+
+另外, 如果你使用vim写[CoffeeScript](http://coffeescript.org/)的话, 本文也许对你有用.
 
 ## 工具
 
@@ -29,8 +31,10 @@ published:  true
 " 基本配置
 set nocompatible
 set autoread
+set autoindent
 set expandtab tabstop=4 softtabstop=4 shiftwidth=4
 set laststatus=2
+set mouse=a
 set t_Co=256
 
 " 转换Markdown为HTML
@@ -74,7 +78,12 @@ let g:Powerline_symbols = 'fancy'
 
 {% endhighlight %}
 
+## 说明
+
+- 如果你还不知道alternate, powerline等vim插件, 请参考: <http://hjkl.me/vim/2012/06/14/vim-plugin.html>
+- 制作视频过程中, 一不小心就用了[table](https://github.com/gotovoid/dot/tree/master/.vim/plugin)插件.
+
 ## 视频演示
 
-- 下载
-- 优酷
+- [下载](http://ubuntuone.com/1m5juUAGNnGDpJMzGObs3B)
+- 优酷(审核中)
