@@ -8,8 +8,15 @@ published:  true
 ---
 
 网上有很多在线markdown编辑器, 当你在文本框内输入markdown后, 在右侧就同步显示相对应的HTML.  
-根据这个原理, 可以制作一个vim版的markdown编辑器. 由于vim不是web浏览器, 就在右侧显示的HTML代码吧!
+根据该原理, 可以制作一个vim版的markdown编辑器. 由于vim不是web浏览器, 就在右侧显示HTML代码吧!
 
+# 工具
+
+- vim - 高级文本编辑器
+- firefox - 网页浏览器
+- markdown - markdown解析器
+- pandoc - 增强版markdown解析器
+- tidy - HTML格式化工具
 
 # 配置
 
@@ -36,7 +43,7 @@ vnoremap <C-p>      !pandoc<CR>
 syntax on
 
 " 自动化命令
-au FileType markdown        let &l:mp='pandoc % \| tidy -q -i --doctype omit --tidy-mark 0 --show-errors 0 -o %:r.html'
+au FileType markdown        let &l:mp='pandoc % \| tidy -q -i -utf8 --doctype omit --tidy-mark 0 --show-errors 0 -o %:r.html'
 au FileType markdown        nnoremap <buffer> <F5> :write \| silent make \| redraw!<CR>
 au BufWrite *.markdown      exe "normal \<F5>"
 
@@ -46,9 +53,11 @@ fun! TOC()
     call setloclist(0, [])
     let save_cursor = getpos(".")
     call cursor(1, 1)
-    while search("^#", 'cW') > 0
-       let msg = printf('%s:%d:%s', expand('%'), line('.'), substitute(getline('.'), '#', '»', 'g'))
-       laddexpr msg
+    let flag = 'cW'
+    while search("^#", flag) > 0
+        let flag = 'W'
+        let msg = printf('%s:%d:%s', expand('%'), line('.'), substitute(getline('.'), '#', '»', 'g'))
+        laddexpr msg
     endwhile
     call setpos('.', save_cursor)
     silent! call ToggleLocationList()
@@ -62,3 +71,8 @@ set rtp+=~/.vim/bundle/alternate/
 let g:Powerline_symbols = 'fancy'
 
 {% endhighlight %}
+
+## 视频演示
+
+- 下载
+- 优酷
