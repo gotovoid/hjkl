@@ -13,7 +13,7 @@ published:  true
 
 # 配置
 
-{{{ highlight vim }}}
+{% highlight vim %}
 " vimrc4md
 " Kev++@2012-06-27
 
@@ -61,4 +61,4 @@ set rtp+=~/.vim/bundle/powerline/
 set rtp+=~/.vim/bundle/alternate/
 let g:Powerline_symbols = 'fancy'
 
-{{{ endhighlight }}}
+{% endhighlight %}
