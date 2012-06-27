@@ -12,7 +12,7 @@ published:  true
 网上有很多[在线markdown编辑器](http://jrham.es/instantmark/), 当你在文本框内输入markdown后, 在右侧就同步显示相对应的HTML.  
 根据该原理, 可以制作一个vim版的markdown编辑器. 由于vim不是web浏览器, 就在右侧显示HTML代码吧!
 
-另外, 如果你使用vim写[CoffeeScript](http://coffeescript.org/)的话, 本文也许对你有用.
+另外, 如果你使用vim写[CoffeeScript][1]的话, 本文也许对你有用.
 
 ## 工具
 
@@ -87,3 +87,5 @@ let g:Powerline_symbols = 'fancy'
 
 - [下载](http://ubuntuone.com/1m5juUAGNnGDpJMzGObs3B)
 - 优酷(审核中)
+
+  [1]: http://stackoverflow.com/questions/9176902/how-to-compile-coffeescript-just-in-time-in-vim/11224037#11224037
