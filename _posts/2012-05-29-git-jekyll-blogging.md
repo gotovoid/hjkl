@@ -7,7 +7,7 @@ tags:       [git, jekyll]
 published:  true
 ---
 
-我曾经使用过很多的blog系统(sina, sohu, 163, qq...).
+我曾经使用过很多的blog系统(baidu, sina, sohu, 163, qq, xiaonei...).
 一直都是寄人篱下, 文章莫名奇妙被删也是家常便饭.
 我也生怕这些网站, 总有一天会倒闭, blog变成了陪葬品.
 多年来我苦不堪言, 因为我没有钱去购买blog空间.
@@ -113,4 +113,5 @@ markdown:    rdiscount
 ## 提交代码
     echo _site/ > .gitignore
     git add .
+    git commit -m 'create my site'
     git push
