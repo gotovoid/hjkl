@@ -180,7 +180,6 @@ vim有两种形式的插件:
     - <kbd>:Gist -l</kbd>, 列出所有gist
     - <kbd>:Gist -d</kbd>, 删除当前gist
     - <kbd>:w</kbd>, 更新当前gist
-- 严重警告: github.com暂时无法访问, 原因未知.
 
 --------
 
@@ -211,6 +210,8 @@ vim有两种形式的插件:
 - vimwiki
     - [下载1](http://ubuntuone.com/6k4KOqIGj5hfI2DmBHWcXJ)
     - [下载2](http://ubuntuone.com/1Br6gJacWwZODU8cdrFn23)
+- gist
+    - 下载
 
 [优酷专辑](http://www.youku.com/playlist_show/id_17756150.html)
 
