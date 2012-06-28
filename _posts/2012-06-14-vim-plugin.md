@@ -172,9 +172,9 @@ vim有两种形式的插件:
 - 注意事项: 先把vim基本功练好, 再玩这个插件!
 
 ## gist
-- 插件介绍: github代码片断manager
+- 插件介绍: github代码片断管理及分享
 - 下载地址: <https://github.com/mattn/gist-vim>
-- 注意事项: github提供的API有bug, 导致无法正确上传含有`%`(百分号)snippet
+- 注意事项: 目前github提供的gist-API有bug, 导致无法正确上传含有`%`(百分号)snippet.
 - 工作原理:
     - <kbd>:Gist</kbd>, 上传当前文件
     - <kbd>:Gist -l</kbd>, 列出所有gist
@@ -211,7 +211,7 @@ vim有两种形式的插件:
     - [下载1](http://ubuntuone.com/6k4KOqIGj5hfI2DmBHWcXJ)
     - [下载2](http://ubuntuone.com/1Br6gJacWwZODU8cdrFn23)
 - gist
-    - 下载
+    - [下载](http://ubuntuone.com/0XfeV6jmRYgyXv68sUg3WI)
 
 [优酷专辑](http://www.youku.com/playlist_show/id_17756150.html)
 
