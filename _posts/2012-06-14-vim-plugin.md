@@ -3,7 +3,7 @@ layout:     post
 title:      vim插件介绍
 comments:   true
 category:   vim
-tags:       [vim, screencast]
+tags:       [vim, beta, screencast]
 published:  true
 ---
 
@@ -172,14 +172,24 @@ vim有两种形式的插件:
 - 注意事项: 先把vim基本功练好, 再玩这个插件!
 
 ## gist
+
 - 插件介绍: github代码片断管理及分享
 - 下载地址: <https://github.com/mattn/gist-vim>
-- 注意事项: 目前github提供的gist-API有bug, 导致无法正确上传含有`%`(百分号)snippet.
 - 工作原理:
     - <kbd>:Gist</kbd>, 上传当前文件
     - <kbd>:Gist -l</kbd>, 列出所有gist
     - <kbd>:Gist -d</kbd>, 删除当前gist
     - <kbd>:w</kbd>, 更新当前gist
+- 注意事项: 目前github提供的gist-API有bug, 导致无法正确上传含有`%`(百分号)snippet.
+
+## gundo
+
+- 插件介绍: 以可视化的方式显示Undo Tree
+- 下载地址: <http://sjl.bitbucket.org/gundo.vim/>
+- 工作原理:
+    - <kbd>:GundoToggle</kbd>, 显示/隐藏Undo Tree
+    - <kbd>:GundoRenderGraph</kbd>, 刷新Undo Tree
+- 注意事项: 本插件需要python
 
 --------
 
@@ -212,7 +222,9 @@ vim有两种形式的插件:
     - [下载2](http://ubuntuone.com/1Br6gJacWwZODU8cdrFn23)
 - gist
     - [下载](http://ubuntuone.com/0XfeV6jmRYgyXv68sUg3WI)
+- gundo
+    - [下载](http://ubuntuone.com/4JqXSM4LoKpr6w0mbJilJj)
 
-[优酷专辑](http://www.youku.com/playlist_show/id_17756150.html)
+## [优酷专辑](http://www.youku.com/playlist_show/id_17756150.html)
 
 **...未完待续...**
