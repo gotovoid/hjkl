@@ -40,7 +40,7 @@ vim有两种形式的插件:
 - **sparkup**
 - **fugitive**
 - **vimwiki**
-- nerdtree
+- **nerdtree**
 - snipmate
 - ...
 
@@ -191,6 +191,11 @@ vim有两种形式的插件:
     - <kbd>:GundoRenderGraph</kbd>, 刷新Undo Tree
 - 注意事项: 本插件需要python
 
+## nerdtree
+
+- 插件介绍: 在vim左侧显示目录结构, 给打开文件提供了方便
+- 下载地址: <https://github.com/scrooloose/nerdtree>
+
 --------
 
 ## 视频演示
@@ -224,6 +229,8 @@ vim有两种形式的插件:
     - [下载](http://ubuntuone.com/0XfeV6jmRYgyXv68sUg3WI)
 - gundo
     - [下载](http://ubuntuone.com/4JqXSM4LoKpr6w0mbJilJj)
+- nerdtree
+    - [下载](http://ubuntuone.com/2cRCIOa5jAz7Pb0XVSlGO5)
 
 ## [优酷专辑](http://www.youku.com/playlist_show/id_17756150.html)
 
