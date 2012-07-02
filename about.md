@@ -12,14 +12,22 @@ I'm a [vim user](http://stackoverflow.com/tags/vim/topusers)! I hope you too!
 
 Please feel free to send me a message.
 
-![gmail](/img/gmail.png)
+联系方式:
+
+- 邮箱: ![gmail](/img/gmail.png)
+- 优酷: <http://i.youku.com/vimhjkl>
+- 豆瓣: <http://www.douban.com/group/hjkl/>
+- 微博:
+    - 新浪: <http://weibo.com/kevpp>
+    - <s>腾讯</s>: <http://t.qq.com/weibokev2500> (邪恶企鹅, 监控你的一举一动, 主动交给派出所!)
+
+我正在制作linux命令行视频, 第一时间发布到[优酷linux-bash专辑][4].
 
 ----
 
 ## 本站及本人
-__godaddy__域名50RMB/年, __github__免费托管.  
 
-本网站基于jekyll框架, 使用markdown写完文章后, 直接上传到github, 然后由github自动生成HTML.
+本网站基于jekyll框架, 使用[markdown][0]写完文章后, 直接上传到github, 然后由github自动生成HTML.
 因此全部页面都是静态HTML+动态Javascript, 没有后台数据库. 整个过程非常简单, 你不妨[尝试][1]一下!
 
 > jekyll是用ruby写的, 我完全不懂ruby, 只把它当成工具使用.
@@ -34,7 +42,7 @@ __godaddy__域名50RMB/年, __github__免费托管.
 每个人都知道, 技术这东西太广了, 不可能什么都懂. 我是个菜鸟, 我怕别人笑话我, 但是没有.
 我想告诉大家, 在国外有很多技术Community, 技术人员在一起讨论问题, 互相帮助, 共同进步. 
 国外有很多+50岁的程序员. 然而, 国内有人说, “30岁还干程序员, 就是没出息！”. 
-你清楚国内外意识形态的差距了吧！有些中国人以当官剥削别人为荣. 这绝对是错的. 
+你清楚国内外意识形态的差距了吧！有些中国人以当官剥削别人为荣, 这绝对是错的. 
 
 ----
 
@@ -108,13 +116,9 @@ __godaddy__域名50RMB/年, __github__免费托管.
 
     ffmpeg -i input.ogv -vcodec libx264 output.mp4
     
-## What's NEXT?
-### shell视频
 
-如果大家对**命令行**感兴趣, 我可以制作一系列的linux shell视频.  
-**命令行**让你透过现象看本质, 同时也是学习linx的必经之路.
-
-[1]: http://hjkl.me/git/2012/05/29/git-jekyll-blogging.html
-[2]: http://www.tudou.com/programs/view/Nbz3C92uFuQ/
-[3]: http://hjkl.me/vim/2012/06/14/vim-plugin.html
-
+  [0]: http://www.youku.com/playlist_show/id_17784877.html "markdown"
+  [1]: http://hjkl.me/git/2012/05/29/git-jekyll-blogging.html "jekyll"
+  [2]: http://www.tudou.com/programs/view/Nbz3C92uFuQ/ "os革命"
+  [3]: http://hjkl.me/vim/2012/06/14/vim-plugin.html "vim-plugin"
+  [4]: http://www.youku.com/playlist_show/id_17809467.html "linux-bash"
