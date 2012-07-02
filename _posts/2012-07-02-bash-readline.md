@@ -14,96 +14,51 @@ published:  true
 
 ## 移动
 
-    C-a
-    C-e
-
-    C-b
-    C-f
-
-    M-b
-    M-f
-
-    C-space
-    C-x x
-
-    C-] x
-    M-C-] x
+    ←           →
+    C-a         C-e
+    C-b         C-f
+    M-b         M-f
+    C-]         M-C-]
+    C-space     C-x-x
 
 ## 删除
 
-    <backspace>
-    M-backspace
-
-    C-h
-    C-w
-
-    C-d
+    C-h         Backspace
+    C-d         Delete
+    C-w         M-Backspace(ESC Backspace)
+    C-u         C-k
     M-d
-
-    C-u
-    C-k
-
     M-\
 
 ## 粘贴
 
-    C-y
-    M-y
+    C-y         M-y
 
-## 撤消
+## 取消
 
-    C-_
-    M-r
+    C-_         M-r
 
-## 改变
+## 编辑
 
-    C-t
-    M-t
-
-    M-c
-    M-l
-    M-u
-
-## 输入
-
-    <Tab>
-
-    C-l
-
-    C-c
-
-    C-v
-    C-q
-
+    C-t         M-t
+    C-v         C-q
+    M-c         M-l         M-u
     M-#
-
     C-x C-e
 
-## 重复
+## 重复/宏
 
-    M-3
+    M-num
+    C-x (       C-x )       C-x e
 
-    C-x (
-    C-x )
-    C-x e
+## 历史(beta)
 
-## 历史
-
-    history -c
-    history -w
-    history -r
-
-    <Up>
-    <Down>
-    
-    C-p
-    C-n
-    
+    history -c/w/r
+    <Up>        <Down>
+    C-p         C-n
     M-.
-
-    C-r
-    C-s
-
+    C-r         C-s
+    
     !!
     !-2
     !foo
