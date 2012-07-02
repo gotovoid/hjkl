@@ -3,7 +3,7 @@ layout:     post
 title:      bash命令行编辑
 comments:   true
 category:   bash
-tags:       [bash]
+tags:       [bash, beta, screencast]
 published:  true
 ---
 
@@ -24,12 +24,14 @@ published:  true
     M-f
 
     C-space
+    C-x x
+
     C-] x
     M-C-] x
 
 ## 删除
 
-    backspace
+    <backspace>
     M-backspace
 
     C-h
@@ -64,14 +66,26 @@ published:  true
 
 ## 输入
 
+    <Tab>
+
+    C-l
+
+    C-c
+
     C-v
     C-q
+
+    M-#
 
     C-x C-e
 
 ## 重复
 
     M-3
+
+    C-x (
+    C-x )
+    C-x e
 
 ## 历史
 
@@ -81,19 +95,33 @@ published:  true
 
     <Up>
     <Down>
+    
+    C-p
+    C-n
+    
+    M-.
 
     C-r
     C-s
 
     !!
     !-2
+    !foo
+
     !!:0
     !!:^
     !!:0-4
     !!:*
     !!:$
+
+    !!:p
+
     !#:$
 
     ^foo^bar
     !!:gs/foo/bar
 
+## 参考
+
+- <http://www.gnu.org/software/bash/manual/bashref.html#Command-Line-Editing>
+- <http://www.catonmat.net/blog/bash-emacs-editing-mode-cheat-sheet/>
