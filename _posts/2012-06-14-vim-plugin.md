@@ -180,7 +180,6 @@ vim有两种形式的插件:
     - <kbd>:Gist -l</kbd>, 列出所有gist
     - <kbd>:Gist -d</kbd>, 删除当前gist
     - <kbd>:w</kbd>, 更新当前gist
-- 注意事项: 目前github提供的gist-API有bug, 导致无法正确上传含有`%`(百分号)snippet.
 
 ## gundo
 
