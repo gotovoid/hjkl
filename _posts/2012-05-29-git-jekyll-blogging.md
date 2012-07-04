@@ -30,15 +30,14 @@ published:  true
 
 ## 创建github项目
 
-> 按照[官方文档](http://help.github.com/pages/)所述, 创建一个分支`gh-pages`.  
-> 其实没有必要创建分支, 任何分支都是可以的, 推荐用`master`.
+> 按照[官方文档](http://help.github.com/pages/)所述, 创建一个分支`gh-pages`(必须是这个名字).
 
     git clone git@github.com:gotovoid/hjkl.git
 
 ## 签出代码
     # 从github获取代码
     git fetch origin
-    # 创建并切换到分支(如果直接用master, 这一步就省了)
+    # 创建并切换到分支
     git checkout -b gh-pages origin/gh-pages
 
 ## 网站结构
