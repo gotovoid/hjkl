@@ -19,13 +19,19 @@ Please feel free to send me a message.
 - 豆瓣: <http://www.douban.com/group/hjkl/>
 - 微博:
     - 新浪: <http://weibo.com/kevpp>
-    - <s>腾讯</s>: <http://t.qq.com/weibokev2500> (邪恶企鹅, 监控你的一举一动, 主动交给派出所!)
+    - <s>腾讯</s>: <http://t.qq.com/weibokev2500> (邪恶企鹅, 监控你的一举一动, 主动报告派出所!)
 
 我正在制作linux命令行视频, 第一时间发布到[优酷linux-bash专辑][4].
 
 ----
 
-## 本站及本人
+大跃进, 亩产三万斤; 少校李聪娜90天写40万行C++代码. 异曲同工, 拍案叫绝!  
+状态比较好的时候, 一天的确可以写+5k行, 但是连续数百日, 有点假.  
+身处河蟹社会, 还能相信CCAV吗?
+
+----
+
+## 关于本站
 
 本网站基于jekyll框架, 使用[markdown][0]写完文章后, 直接上传到github, 然后由github自动生成HTML.
 因此全部页面都是静态HTML+动态Javascript, 没有后台数据库. 整个过程非常简单, 你不妨[尝试][1]一下!
