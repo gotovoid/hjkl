@@ -302,6 +302,7 @@ kbd {
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
+    background: -webkit-linear-gradient(#F1F1F1, #DDDDDD) repeat scroll 0 0 transparent;
     background: -moz-linear-gradient(#F1F1F1, #DDDDDD) repeat scroll 0 0 transparent;
     border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
     border-radius: 2px 2px 2px 2px;
