@@ -195,6 +195,11 @@ vim有两种形式的插件:
 - 插件介绍: 在vim左侧显示目录结构, 给打开文件提供了方便
 - 下载地址: <https://github.com/scrooloose/nerdtree>
 
+## file:line
+
+- 插件介绍: 打开文件, 并且把光标置于指定行与列
+- 下载地址: <https://github.com/bogado/file-line>
+
 --------
 
 ## 视频演示
@@ -230,6 +235,8 @@ vim有两种形式的插件:
     - [下载](http://ubuntuone.com/4JqXSM4LoKpr6w0mbJilJj)
 - nerdtree
     - [下载](http://ubuntuone.com/2cRCIOa5jAz7Pb0XVSlGO5)
+- file:line
+    - [下载](http://ubuntuone.com/0grKkmyzq7rDB5xlqkYCFq)
 
 ## [优酷专辑](http://www.youku.com/playlist_show/id_17756150.html)
 
