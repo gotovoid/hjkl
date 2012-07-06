@@ -18,6 +18,10 @@ published:  true
 
     $ vim -u NORC
 
+### 不加载plugin
+
+    $ vim --noplugin
+
 ### 不加载vimrc及plugin
 
     $ vim -N -u NONE
@@ -55,11 +59,11 @@ published:  true
 在vim中
 -------
 
-### 查看vimrc文件名
+### 查看实际使用的vimrc文件名
     
     :echo $MYVIMRC
 
-### 查看所有已加载的脚步
+### 查看所有已加载的脚本
 
     :scriptnames
 
