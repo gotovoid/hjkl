@@ -200,6 +200,15 @@ vim有两种形式的插件:
 - 插件介绍: 打开文件, 并且把光标置于指定行与列
 - 下载地址: <https://github.com/bogado/file-line>
 
+## space
+
+- 插件介绍: 智能地改变<kbd>Space</kbd>的功能, 便捷地跳到下一个位置
+- 下载地址: <https://github.com/spiiph/vim-space>
+- 工作原理:
+    - 使用<kbd>/search</kbd>, <kbd>fx</kbd>, <kbd>]c</kbd>等命令后, 动态改变<kbd>Space</kbd>的功能
+    - <kbd>Space</kbd>, 跳到下一个位置
+    - <kbd>Shift-Space</kbd>, 跳到前一个位置
+
 --------
 
 ## 视频演示
@@ -237,6 +246,8 @@ vim有两种形式的插件:
     - [下载](http://ubuntuone.com/2cRCIOa5jAz7Pb0XVSlGO5)
 - file:line
     - [下载](http://ubuntuone.com/0grKkmyzq7rDB5xlqkYCFq)
+- space
+    - [下载](http://ubuntuone.com/14wbQI5EC8VkA6HlsMh476)
 
 ## [优酷专辑](http://www.youku.com/playlist_show/id_17756150.html)
 
