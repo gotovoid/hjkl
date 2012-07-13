@@ -12,7 +12,7 @@ comments:  true
 ## 技术交流
 
 - 豆瓣: <http://www.douban.com/group/hjkl/>
-- <s>腾讯</s>: 同样是Penguin(Linux vs. QQ), 为啥差别咋就那么大呢?! (请加入反QQ组织)
+- <s>腾讯</s>: 同样是Penguin(Linux vs. QQ), 为啥差别咋就那么大呢?! (请加入[反QQ组织](http://www.douban.com/group/NOQQ/))
 
 ## 在线观看
 
