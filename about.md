@@ -19,7 +19,7 @@ Please feel free to send me a message.
 - 豆瓣: <http://www.douban.com/group/hjkl/>
 - 微博:
     - 新浪: <http://weibo.com/kevpp>
-    - <s>腾讯</s>: <http://t.qq.com/weibokev2500> (邪恶企鹅, 监控你的一举一动, 主动报告派出所!)
+    - <s>腾讯</s>: 邪恶企鹅, 监控你的一举一动, 主动报告派出所!
 
 我正在制作linux命令行视频, 第一时间发布到[优酷linux-bash专辑][4].
 
