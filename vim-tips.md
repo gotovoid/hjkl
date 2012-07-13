@@ -1,10 +1,18 @@
 ---
 layout:    default
-title:     Vim Daily
+title:     Vim Tips
 comments:  true
 ---
 
-每日更新在线列表, 每周更新下载列表. 请勿用于商业用途, 违者必究!
+## 友情提醒
+
+- 每日更新在线列表, 每周更新下载列表
+- 请勿用于商业用途, 违者必究!
+
+## 技术交流
+
+- 豆瓣: <http://www.douban.com/group/hjkl/>
+- <s>腾讯</s>: 同样是Penguin(Linux vs. QQ), 为啥差别咋就那么大呢?! (请加入反QQ组织)
 
 ## 在线观看
 
