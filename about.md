@@ -8,9 +8,7 @@ comments:  true
 
 ![vim](http://www.vim.org/images/vim.vialle.love.anim.gif)
 
-- 邮箱: ![gmail](/img/gmail.png)
-- 优酷: <http://i.youku.com/vimhjkl>
-- 豆瓣: <http://www.douban.com/group/hjkl/>
+![gmail](/img/gmail.png)
 
 ----
 
