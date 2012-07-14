@@ -10,7 +10,8 @@ comments:  true
 
 ----
 
-我制作了一些[vim视频](http://i.youku.com/vimhjkl).
+制作了一些[vim视频](http://i.youku.com/vimhjkl), 自娱自乐.
+我的无知超出了我的想象!
 
 ### 视频录制参数
 
