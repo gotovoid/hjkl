@@ -10,7 +10,7 @@ comments:  true
 
 ## 在线观看
 
-优酷: <http://www.youku.com/playlist_show/id_17815063.html>
+- 优酷: <http://www.youku.com/playlist_show/id_17815063.html>
 
 ## 高清下载
 
