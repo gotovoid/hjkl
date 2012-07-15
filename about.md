@@ -10,25 +10,23 @@ comments:  true
 
 > 我是多么无知啊, 一定要有自知之明!
 
-----
-
-vim+linux高级用户组
-=================================
-http://www.douban.com/group/hjkl/
 ---------------------------------
 
-# vim技巧 #
-- 优酷: http://www.youku.com/playlist_show/id_17815063.html
-- 下载: http://hjkl.me/vim-tips.html
+[vim+linux用户组](http://www.douban.com/group/hjkl/)
+===============
+
+## vim技巧 ##
+- 优酷: <http://www.youku.com/playlist_show/id_17815063.html>
+- 下载: <http://hjkl.me/vim-tips.html>
 - 密码: 视频编号
 
-# vim插件 #
-- 优酷: http://www.youku.com/playlist_show/id_17756150.html
-- 下载: http://hjkl.me/vim/2012/06/14/vim-plugin.html
+## vim插件 ##
+- 优酷: <http://www.youku.com/playlist_show/id_17756150.html>
+- 下载: <http://hjkl.me/vim/2012/06/14/vim-plugin.html>
 - 密码: 插件名称
 
-# linux命令行#
-- 优酷: http://www.youku.com/playlist_show/id_17809467.html
+## linux命令行##
+- 优酷: <http://www.youku.com/playlist_show/id_17809467.html>
 - 密码: 暂无
 
 ---------------------------------
