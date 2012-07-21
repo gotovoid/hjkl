@@ -19,6 +19,10 @@ comments:  true
 
 ![vim-golf-004.gif](/img/vim-golf-004.gif)
 
+![vim-golf-005.gif](/img/vim-golf-005.gif)
+
+![vim-golf-006.gif](/img/vim-golf-006.gif)
+
 ---------------------------------------------------
 
 ## 技术交流
