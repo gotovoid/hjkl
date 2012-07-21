@@ -31,7 +31,7 @@ try:
     xml = ET.XML(unicode(urlopen(url, timeout=5).read() ,'gb2312').encode('utf-8')).find('.//forecast_conditions')
     if xml is None:
         raise Exception('city not found!')
-    weather = dict((x.tag, x.get('data').encode('utf-8')) for x in xml.getchildren())
+    weather = {x.tag:x.get('data').encode('utf-8') for x in xml.getchildren()}
     vim.command('return "%s(%s°C~%s°C)"' % (weather['condition'], weather['low'], weather['high']))
 except Exception, e:
     vim.command('return "Error: %s"' % e)
