@@ -37,7 +37,7 @@ except Exception, e:
     vim.command('return "Error: %s"' % e)
 _EOF_
 endfun
-{ endhighlight }
+{% endhighlight %}
 
 ## 注意事项
 
