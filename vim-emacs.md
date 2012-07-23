@@ -1,6 +1,6 @@
 ---
 layout:    default
-title:     Vim Golf
+title:     Vim Emacs
 comments:  true
 ---
 
