@@ -1,10 +1,7 @@
 ---
-layout:     post
-title:      vim插件介绍
-comments:   true
-category:   vim
-tags:       [vim, beta, screencast]
-published:  true
+layout:    default
+title:     Vim Plugin
+comments:  true
 ---
 
 可以通过安装插件来扩展vim的功能. vim的插件, 其实就是用vimscript写的脚本.
