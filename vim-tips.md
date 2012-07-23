@@ -4,29 +4,9 @@ title:     Vim Tips
 comments:  true
 ---
 
-## 录制参数
-
-    recordMyDesktop: Advanced » Performance
-    ---------------------------------------
-    参数                        值
-    ---------------------------------------
-    Frames Per Second           10
-    Encode One the Fly          ✓
-    Zero Compression            ✓
-    Quick Subsampling           ✗
-    Full shots at every frame   ✓
-
-## 视频编码
-
-    ffmpeg -i input.ogv -vcodec libx264 output.mp4
-
 ## 技术交流
 
 - 豆瓣: <http://www.douban.com/group/hjkl/>
-
-## 在线观看
-
-- 优酷: <http://www.youku.com/playlist_show/id_17815063.html>
 
 ## 高清下载
 
