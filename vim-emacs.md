@@ -35,6 +35,9 @@ comments:  true
     C-b         M-v
     gg          M-<
     G           M->
+    H           M-0 M-r
+    M           M-r
+    L           M-- M-r
 
 ## Change 
 
