@@ -38,6 +38,11 @@ comments:  true
     H           M-0 M-r
     M           M-r
     L           M-- M-r
+    zt          M-0 C-l
+    zz          C-l
+    z.
+    zb          M-- C-l
+                M-C-l
 
 ## Change 
 
