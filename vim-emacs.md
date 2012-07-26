@@ -57,7 +57,7 @@ comments:  true
                 C-e C-0 C-k
     iC-w        M-<BS>
     yy          C-a C-k C-y
-                C-a C-<SPACE> C-e M-w
+                C-a C-<SPC> C-e M-w
     p           C-y
     u           C-x u
                 C-/
@@ -70,6 +70,8 @@ comments:  true
     iC-q        C-q
     iC-v
     :retab!     M-x untabify
+    .           C-x z
+    @:          C-x <ESC> <ESC>
 
 ## Search/Replace 
 
@@ -85,17 +87,6 @@ comments:  true
                 M-C-%
     :vimgrep    M-x occur
                 M-s o
-
-## Visual
-
-    VIM         EMACS
-    ━━━━━━━━━━━━━━━━━
-    v           C-<SPACE>
-    gv          C-x C-x
-    ggVG        C-x h
-    vap         M-h
-    vas         M-a C-<SPACE> M-e
-    viw         M-b C-<SPACE> M-f
 
 ## Window/Buffer 
 
@@ -116,6 +107,26 @@ comments:  true
     :new file   C-x 4 f file
     :tabe file  C-x 5 f file
     C-w w       C-x o
+
+## Mark/Register
+
+    VIM         EMACS
+    ━━━━━━━━━━━━━━━━━
+    v           C-<SPC>
+    gv          C-x C-x
+    ggVG        C-x h
+    vap         M-h
+    vas         M-a C-<SPC> M-e
+    viw         M-b C-<SPC> M-f
+    "ay         C-x r s a
+    "ap         C-x r i a
+    ma          C-x r m a
+                C-x r <SPC>
+    `a          C-x r b a
+                C-x r j a
+    :marks      C-x r l
+    :delm a     M-x bookmark-delete<RET>a<RET>
+    C-o         C-u C-<SPC>
 
 ## Setting 
 
@@ -151,7 +162,7 @@ comments:  true
     set nu      (global-linum-mode t)
     set cul     (global-hl-line-mode t)
     set wmnu    (ido-mode t)
-    set list    (setq-default show-trailing-whitespace t)
+    set list    (setq-default show-trailing-whiteSPC t)
     set ts=4    (setq-default tab-width 4)
     set et      (setq-default indent-tabs-mode nil)
     so code.vim (load "code.el")
