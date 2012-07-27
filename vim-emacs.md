@@ -67,6 +67,8 @@ comments:  true
     R           <INS>
     dfx         M-z x
     C-n         M-/
+                M-<TAB>
+    z=          M-$
     iC-q        C-q
     iC-v
     :retab!     M-x untabify
@@ -93,7 +95,12 @@ comments:  true
     VIM         EMACS
     ━━━━━━━━━━━━━━━━━
     :bd         C-x k
+    :bw
     C-^         C-x b
+    :e#
+    :bn         C-x <right>
+    :bp         C-x <left>
+    :ls         C-u C-x C-b
     :ls!        C-x C-b
     C-w c       C-x 0
     C-w q
@@ -159,6 +166,7 @@ comments:  true
 
     VIM         EMACS
     ━━━━━━━━━━━━━━━━━
+    set spell   M-x flyspell-mode
     set nu      (global-linum-mode t)
     set cul     (global-hl-line-mode t)
     set wmnu    (ido-mode t)
