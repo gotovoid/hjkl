@@ -43,6 +43,8 @@ comments:  true
                 M-C-l
     z.
     zb          M-- C-l
+    %           M-C-f
+                M-C-b
 
 ## Change 
 
@@ -166,11 +168,12 @@ comments:  true
 
     VIM         EMACS
     ━━━━━━━━━━━━━━━━━
-    set spell   M-x flyspell-mode
-    set nu      (global-linum-mode t)
     set cul     (global-hl-line-mode t)
-    set wmnu    (ido-mode t)
-    set list    (setq-default show-trailing-whiteSPC t)
-    set ts=4    (setq-default tab-width 4)
     set et      (setq-default indent-tabs-mode nil)
+    set list    (setq-default show-trailing-whiteSPC t)
+    set nu      (global-linum-mode t)
+    set sm      (show-paren-mode t)
+    set spell   (flyspell-mode t)
+    set ts=4    (setq-default tab-width 4)
+    set wmnu    (ido-mode t)
     so code.vim (load "code.el")
