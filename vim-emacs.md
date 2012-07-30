@@ -177,3 +177,5 @@ comments:  true
     set ts=4    (setq-default tab-width 4)
     set wmnu    (ido-mode t)
     so code.vim (load "code.el")
+
+⌨
