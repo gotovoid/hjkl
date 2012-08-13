@@ -42,6 +42,7 @@ published:  true
 ### 加载vimrc前, 执行命令
 
     $ vim --cmd 'set verbose=9 verbosefile=vim.log'
+    $ vim --cmd 'let g:loaded_nerd_tree=1'
 
 ### 加载vimrc后, 执行命令
 
