@@ -31,6 +31,8 @@ comments:  true
 ![vim-golf-009.gif](/img/vim-golf-009.gif)
 ###010 列表编号
 ![vim-golf-010.gif](/img/vim-golf-010.gif)
+###011 寻找素数
+![vim-golf-011.gif](/img/vim-golf-011.gif)
 
 ---------------------------------------------------
 
