@@ -37,6 +37,8 @@ comments:  true
 ![vim-golf-012.gif](/img/vim-golf-012.gif)
 ###013 Factorial
 ![vim-golf-013.gif](/img/vim-golf-013.gif)
+###014 冒泡排序
+![vim-golf-014.gif](/img/vim-golf-014.gif)
 
 ---------------------------------------------------
 
