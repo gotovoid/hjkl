@@ -87,3 +87,4 @@ comments:  true
     $ chmod +x gif
     $ ./gif video.fmt
     $ display video.fmt.gif
+
