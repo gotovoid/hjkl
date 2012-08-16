@@ -38,5 +38,5 @@ Why most people don't want to learn vim?
     >>> (define s3 (cons-stream 1 (add-streams (cdr-stream s2) s3)))
     >>> (define s4 (cons-stream 1 (add-streams (cdr-stream s3) s4)))
     >>> (define s5 (cons-stream 1 (add-streams (cdr-stream s4) s5)))
-    >>> (caddddr-stream s5)
+    >>> (stream-ref s5 5)
     ?
