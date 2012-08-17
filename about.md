@@ -8,9 +8,8 @@ comments:  true
 ![vim](/img/love-vim.gif)
 ![gmail](/img/gmail.png)
 
-> [vim官网](http://www.vim.org/)被墙，我憎恨中共!  
-> 中共的本质是独裁!  
-> 天朝山寨奇异国必亡!  
+> [vim官网](http://www.vim.org/)被墙，诅咒中共早日灭亡!  
+> 中共的本质是独裁, 天朝山寨奇异国必亡!  
 > 穷则独善其身, 达则兼济天下!  
 
 ---------------------------------
