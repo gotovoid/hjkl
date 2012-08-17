@@ -4,15 +4,14 @@ title:     About
 comments:  true
 ---
 
-![flair](http://stackexchange.com/users/flair/141612.png)
-![vim](http://www.vim.org/images/vim.vialle.love.anim.gif)
+![flair](http://stackoverflow.com/users/flair/348785.png)
+![vim](/img/love-vim.gif)
 ![gmail](/img/gmail.png)
 
+> [vim官网](http://www.vim.org/)被墙，我憎恨中共!  
+> 中共的本质是独裁!  
+> 天朝山寨奇异国必亡!  
 > 穷则独善其身, 达则兼济天下!  
-
----------------------------------
-
-Why most people don't want to learn vim?
 
 ---------------------------------
       
