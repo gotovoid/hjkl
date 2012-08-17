@@ -9,7 +9,6 @@ comments:  true
 ![gmail](/img/gmail.png)
 
 > [vim官网](http://www.vim.org/)被中共封锁，中共的本质是独裁!  
-> 诅咒中共早日灭亡, 天朝山寨奇异国必亡!  
 > 中国人民生活在水深火热之中!  
 > 穷则独善其身, 达则兼济天下!  
 
