@@ -8,8 +8,7 @@ comments:  true
 ![vim](/img/love-vim.gif)
 ![gmail](/img/gmail.png)
 
-> [vim官网](http://www.vim.org/)被中共封锁，中共的本质是独裁!  
-> 天朝山寨奇异国民生活在水深火热之中!  
+> [vim官网](http://www.vim.org/)被中共封锁!  
 > 穷则独善其身, 达则兼济天下!  
 
 ---------------------------------
