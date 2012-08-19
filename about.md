@@ -20,7 +20,7 @@ comments:  true
 ## less is more
 
 - The basic problem is actually very complicated.
-- It's amazing that computers only use `0` and` 1`.
+- It's amazing that computers only use `0` and `1`.
 
 ## I taught myself
 
