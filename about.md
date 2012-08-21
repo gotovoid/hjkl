@@ -8,7 +8,7 @@ comments:  true
 ![vim](/img/love-vim.gif)
 ![gmail](/img/gmail.png)
 
-> [vim.org](http://www.vim.org/)惨遭中国共产党封锁! :(  
+> [Internet](http://en.wikipedia.org/wiki/Internet)惨遭中国共产党封锁! :(  
 > 厌恶独裁统治, 有钱就会移民!  
 > 知识就是力量, 落后就会挨打!  
 > 穷则独善其身, 达则兼济天下!  
