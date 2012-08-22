@@ -46,5 +46,5 @@ I'm happy to do what I love! I'd love to learn more.
     ints = 1 : (merge ints ones)
     fibs = 0 : 1 : (merge fibs (tail fibs))
     
-    sieve (x:xs) = x : [y | y<-(seive xs), (y `mod` x)/=0]
+    sieve (x:xs) = x : [y | y<-(sieve xs), (y `mod` x)/=0]
     primes = sieve [2..]
