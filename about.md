@@ -5,6 +5,7 @@ comments:  true
 ---
 
 ![flair](http://stackoverflow.com/users/flair/348785.png)
+![eular](http://projecteuler.net/profile/vimhjkl.png)
 ![vim](/img/love-vim.gif)
 ![gmail](/img/gmail.png)
 
