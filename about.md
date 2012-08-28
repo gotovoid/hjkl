@@ -29,14 +29,8 @@ I'm happy to do what I love! I'd love to learn more.
 
 ## expressive haskell
 
-    merge xs ys
-        | null xs = ys
-        | null ys = xs
-        | otherwise = (x+y) : (merge xs' ys')
-        where x:xs' = xs
-              y:ys' = ys
-
-    ones = repeat 1
+    merge = zipWith (+)
+    ones = 1 : ones
     ints = 1 : (merge ints ones)
     fibs = 0 : 1 : (merge fibs (tail fibs))
     
