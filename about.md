@@ -41,6 +41,7 @@ I'm happy to do what I love! I'd love to learn more.
 
 ---------------------------------
 
-## 学习VIM（视频）
+## 学习VIM
 
-[优酷在线](http://www.youku.com/playlist_show/id_18250836.html)
+- [优酷在线](http://www.youku.com/playlist_show/id_18250836.html)
+- [豆瓣小组](http://www.douban.com/group/hjkl/)
