@@ -4,6 +4,7 @@ title:     About
 comments:  true
 ---
 
+![so](/img/so.png)
 ![vim](/img/love-vim.gif)
 ![gmail](/img/gmail.png)
 
@@ -37,3 +38,9 @@ I'm happy to do what I love! I'd love to learn more.
     
     sieve (x:xs) = x : [y | y<-(sieve xs), (y `mod` x)/=0]
     primes = sieve [2..]
+
+---------------------------------
+
+## 学习VIM（视频）
+
+[优酷在线](http://www.youku.com/playlist_show/id_18250836.html)
