@@ -24,6 +24,7 @@ comments:  true
 - `bash` 2 years ago (2010)
 - `emacs` 1 month ago (2012)
 - `haskell` 2 weeks ago (2012)
+- ...
 
 I'm happy to do what I love! I'd love to learn more.
 
