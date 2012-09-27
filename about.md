@@ -4,45 +4,5 @@ title:     About
 comments:  true
 ---
 
-![so](/img/so.png)
-![vim](/img/love-vim.gif)
-![gmail](/img/gmail.png)
+> No bullshit any more.
 
----------------------------------
-
-> Simplicity is the ultimate sophistication. — Leonardo Da Vinci
-
-## less is more
-
-- The basic problem is actually very complicated.
-- It's amazing that computers only use `0` and `1`.
-
-## I taught myself
-
-- `vim` 4 years ago (2008)
-- `python` 4 years ago (2008)
-- `bash` 2 years ago (2010)
-- `emacs` 1 month ago (2012)
-- `haskell` 2 weeks ago (2012)
-- ...
-
-I'm happy to do what I love! I'd love to learn more.
-
----------------------------------
-
-## expressive haskell
-
-    merge = zipWith (+)
-    ones = 1 : ones
-    ints = 1 : (merge ints ones)
-    fibs = 0 : 1 : (merge fibs (tail fibs))
-    
-    sieve (x:xs) = x : [y | y<-(sieve xs), (y `mod` x)/=0]
-    primes = sieve [2..]
-
----------------------------------
-
-## 学习VIM
-
-- [优酷在线](http://www.youku.com/playlist_show/id_18250836.html)
-- [豆瓣小组](http://www.douban.com/group/hjkl/)
