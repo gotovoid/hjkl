@@ -4,5 +4,7 @@ title:     About
 comments:  true
 ---
 
-> 我小心翼翼地挥舞光标，吓走了显示器上的蚊子。
+![so](http://stackoverflow.com/users/flair/348785.png)
+
+> 我小心翼翼地挥舞光标，吓跑了显示器上的蚊子。
 
