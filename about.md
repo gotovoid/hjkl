@@ -4,5 +4,5 @@ title:     About
 comments:  true
 ---
 
-> No bullshit any more.
+> 我小心翼翼地挥舞光标，吓走了显示器上的蚊子。
 
