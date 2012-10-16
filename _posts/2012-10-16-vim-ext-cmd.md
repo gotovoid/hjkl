@@ -9,9 +9,11 @@ tags: [vim, shell, python]
 
 ## 运行外部程序
     :!cmd
+    :!
     :silent !cmd
     ------------
-    :!mkdir fold
+    :!mkdir folder
+    :!
     :silent !rm #☆
 
 ## 使用外部filter程序★
@@ -26,8 +28,7 @@ tags: [vim, shell, python]
 ## 读入外部程序结果★
     :[addr]r!cmd
     ------------
-    :0r!seq 10
-    :r!date +'\%F \%T'☆
+    :0r!date +'\%F \%T'☆
 
 ## 以指定输入调用外部程序
     :[range]w !cmd†
@@ -46,4 +47,4 @@ tags: [vim, shell, python]
 - ★ 可能会改变buffer
 - ☆ 需对%及#进行转意
 - † w后的空格不可省略
-- ‡ 需指定版本的python
+- ‡ 需特定版本的python
