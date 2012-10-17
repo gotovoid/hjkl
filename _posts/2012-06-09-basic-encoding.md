@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      彻底理解字符编码
+title:      理解encoding
 comments:   true
 category:   basic
 tags:       [basic, encoding]
