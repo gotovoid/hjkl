@@ -1,0 +1,30 @@
+---
+layout: post
+title: 巧用vim的Ctrl-R
+category: vim
+tags: [vim]
+---
+
+在`INSERT`或`COMMAND`模式下, `Ctrl-R`非常实用的. 详情可查看`:h i^R`.
+
+Ctrl-R
+------
+
+    a   寄存器a的内容
+    "   上次yank/delete的内容
+    :   上次执行的ex命令
+    /   上次search的内容
+    *   粘贴板中的内容
+    %   当前buffer文件名
+    #   候补buffer文件名
+    .   上次insert的内容
+
+Ctrl-R=
+-------
+
+    1+1
+    sqrt(pow(3,2)+pow(4,2))
+    "\xe4\xb8\xad"
+    range(10)
+    filter(map(range(10), '3*v:val'), 'v:val%2==0')
+
