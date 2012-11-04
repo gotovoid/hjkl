@@ -87,3 +87,6 @@ tags: [basic, regex]
     r'(?=x)\1'
         sre_constants.error: bogus escape: '\\1'
 
+    r'(x\1)'
+        sre_constants.error: cannot refer to open group
+
