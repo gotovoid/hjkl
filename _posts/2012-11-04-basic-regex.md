@@ -8,7 +8,7 @@ tags: [basic, regex]
 正则表达式(regex), 是个值得掌握的工具!
 
 组成元素
-======
+------
 
     Combination
         concatenation
@@ -47,7 +47,7 @@ tags: [basic, regex]
         mode
 
 多行模式
-======
+------
 
     MULTI-LINE MODE (OFF)
         ^ - 匹配字符串之首
@@ -66,14 +66,14 @@ tags: [basic, regex]
              ^         $  ^         $  ^$  ^$  ^$
 
 等价关系
-======
+------
 
     r'^x$'      ===     r'^^^x$$$'
     r'\bx\b'    ===     r'\b\b\bx\b\b\b'
     r'\b\B'     ===     r'(?!)'
 
 常见错误
-======
+------
 
     r'x$*'
     r'(x*)*'
