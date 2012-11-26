@@ -27,7 +27,6 @@ tags: [linux]
 note: random-salt prevents [rainbow-table][1] cracking.
 
 ## KEYGEN
-======
 
     $ openssl passwd -1 -salt SALTsalt PASSWORD
     $1$SALTsalt$BvkiiEvpuamJDOU5kLDHo/
