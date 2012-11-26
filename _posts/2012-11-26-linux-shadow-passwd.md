@@ -10,7 +10,7 @@ tags: [linux]
     $enc-id$random-salt$password-hash
 
     ID | Method   | sLen | hLen | Note
-    ───+──────────+──────+──────+───────────────
+    ---+----------+------+------+---------------
     -  | DES      | 2    | 11   |
     1  | MD5      | 8    | 22   |
     2a | Blowfish |      |      | not in mainline glibc
